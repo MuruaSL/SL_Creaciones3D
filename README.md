@@ -16,9 +16,7 @@ Este proyecto utilizara:
   * SASS
   * Javascript
   * librerias Externas como AOS y Bootstrap
-      Referencias:
-        * https://getbootstrap.com/
-        * https://michalsnik.github.io/aos/
+      Referencias: https://getbootstrap.com/ || https://michalsnik.github.io/aos/
   
 Colaboraciones: 
   * Como proyecto de desarrollo personal, no se buscan colaboraciones, sin embargo cualquier informacion relevante u observacion será tenida en cuenta.
