@@ -1,3 +1,8 @@
+/*------------------------------------Gallery ------------------------------------------------*/
+.background_color_gallery {
+  background-color: #171f25;
+}
+
 /* -----------------------------General Resets--------------------------------------*/
 * {
   margin: 0px;
@@ -71,18 +76,20 @@ ol, ul {
   }
 }
 /*-----------------------------------------INDEX -----------------------------------------*/
-.background_color {
+.background_color_index {
   background-color: #171f25;
 }
 
 .separador_main {
-  background-color: #f2eab7;
-  margin-right: 10vw;
-  margin-left: 10vw;
-  margin-top: 7vh;
+  background-color: white;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  margin-top: 5vh;
   margin-bottom: 7vh;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 2rem;
 }
+
+/*---------------------------------------------SLIDE----------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
