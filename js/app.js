@@ -18,9 +18,9 @@ let opcion = Number(prompt("ingrese la opcion que desee: 1:agregar figura, 2:jue
             let continuar = "si"
             while (continuar == "si"){
                 let nombre = prompt("ingrese el nombre de la figura");
-                let tamano = prompt("ingrese el tamaño de la figura");
+                let tamano = prompt("ingrese el tamaño de la figura (numeros en [Cm])");
                 let categoria = prompt("ingrese la categoria de la figura");
-                let precio = prompt("ingrese el precio de la figura");
+                let precio = prompt("ingrese el precio de la figura [numeros]");
                 const nuevafig = new Figura(nombre,tamano,categoria,precio)
                 console.log(nuevafig);
                 continuar = prompt("¿Desea seguir agregando figuras? (si o no)");
