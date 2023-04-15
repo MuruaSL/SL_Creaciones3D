@@ -14,7 +14,6 @@ function getRandomInt(max) {
 // ---------------------------------Menu ----------------------------------------//
 let opcion = Number(prompt("ingrese la opcion que desee: 1:agregar figura, 2:juego de adivinanza, 9:salir"))
     switch (opcion) {
-        
         case 1:
             let continuar = "si"
             while (continuar == "si"){
@@ -25,10 +24,8 @@ let opcion = Number(prompt("ingrese la opcion que desee: 1:agregar figura, 2:jue
                 const nuevafig = new Figura(nombre,tamano,categoria,precio)
                 console.log(nuevafig);
                 continuar = prompt("¿Desea seguir agregando figuras? (si o no)");
-
             }
-            
-    
+            break
         case 2:
             let condicion = "si"
             while (condicion == "si") {
@@ -41,6 +38,7 @@ let opcion = Number(prompt("ingrese la opcion que desee: 1:agregar figura, 2:jue
                         condicion = prompt("FUfufuuu!! te gano la maquina ( ͡° ͜ʖ ͡°) " + `el numero era: ${alea}`+" ¿Quieres seguir jugando? (si o no)");
                     }
             }
+            break;
         case 9:
             console.log(" (｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
             corte = false
