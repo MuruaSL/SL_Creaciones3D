@@ -3,6 +3,91 @@
   background-color: #171f25;
 }
 
+.css_titulo_nuestrosprod {
+  padding: 2rem;
+  text-align: center;
+  background-color: #171f25;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ordenTarjetas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.separador-tarjeta {
+  margin: 1rem;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 30.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .ordenTarjetas {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.card {
+  background: #752e2b;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #752e2b;
+  max-width: 80%;
+}
+
+.card .card-border-top {
+  height: 1rem;
+  background: #752e2b;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.card .img {
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border-color: #090f13;
+  margin-top: 30px;
+  background: #171f25;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card button:hover {
+  background: #f2eab7;
+  color: black;
+}
+
 /* -----------------------------General Resets--------------------------------------*/
 * {
   margin: 0px;
@@ -15,6 +100,10 @@ p {
 
 ol, ul {
   padding-left: 0rem;
+}
+
+.disp-flex {
+  display: flex;
 }
 
 /*-------------------------------------Navbar-------------------------------------------*/

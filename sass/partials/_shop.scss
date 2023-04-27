@@ -1,0 +1,85 @@
+@use "./colors";
+
+
+.css_titulo_nuestrosprod{
+    padding: 2rem;
+    text-align: center;
+    background-color: colors.$color_dark_grey;
+    color: colors.$color_white;
+    margin-bottom: 1rem;
+}
+
+.ordenTarjetas{
+    display: flex;
+    justify-content: space-around;
+}
+.separador-tarjeta{
+    margin: 1rem;
+}
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 30.33333333%;
+}}
+@media (min-width: 768px){
+    .ordenTarjetas {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+}
+.card {
+background: colors.$color_deep_brick;
+border-radius: 15px;
+box-shadow: 1px 5px 60px 0px colors.$color_deep_brick;
+max-width: 80%;
+}
+
+.card .card-border-top {
+height: 1rem;
+background: colors.$color_deep_brick;
+margin: auto;
+border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+font-weight: 600;
+color: white;
+text-align: center;
+display: block;
+padding-top: 10px;
+font-size: 16px;
+}
+
+.card .job {
+font-weight: 400;
+color: white;
+display: block;
+text-align: center;
+padding-top: 3px;
+font-size: 12px;
+}
+
+.card .img {
+border-radius: 15px;
+margin: auto;
+margin-top: 25px;
+}
+
+.card button {
+padding: 8px 25px;
+display: block;
+margin: auto;
+border-radius: 8px;
+border-color:colors.$color_black;
+margin-top: 30px;
+background: colors.$color_dark_grey;
+color: white;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.card button:hover {
+background: colors.$color_cream;
+color: black;
+}

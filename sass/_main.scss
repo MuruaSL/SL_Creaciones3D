@@ -3,6 +3,7 @@
 @use './partials/mostSelled';
 @use './partials/myFavorites';
 @use './partials/whoIAm';
+@use './partials/shop.scss';
 
 /* -----------------------------General Resets--------------------------------------*/
 *{
@@ -14,6 +15,10 @@ p{
 }
 ol, ul {
     padding-left: 0rem;
+}
+
+.disp-flex{
+    display: flex;
 }
 
 /*-------------------------------------Navbar-------------------------------------------*/
