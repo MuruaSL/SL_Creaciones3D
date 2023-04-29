@@ -47,7 +47,11 @@ let productos =[
     {id:9 , img:"../img/tienda/yodaBbPintado.png",
             titulo: "Baby Yoda", 
             descripcion:"Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda" , 
-            precio:1000 }
+            precio:1000 },
+    {id:10 , img:"../img/tienda/calaberaLapicero.png",
+            titulo: "Craneo lapicero" , 
+            descripcion:"Lapicero calavera detallado. Úsalo en la oficina, la escuela o en casa." , 
+            precio:1540}
 ]
 
 const seccion_productos = document.querySelector("#section_shop")
