@@ -11,27 +11,16 @@
   margin-bottom: 1rem;
 }
 
-.ordenTarjetas {
-  display: flex;
-  justify-content: space-around;
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .separador-tarjeta {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 auto;
-    width: 30.33333333%;
-  }
-}
-@media (min-width: 768px) {
-  .ordenTarjetas {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
 .card {
   background: #752e2b;
   border-radius: 15px;
@@ -88,6 +77,11 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+  }
+}
 /* -----------------------------General Resets--------------------------------------*/
 * {
   margin: 0px;
