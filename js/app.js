@@ -41,7 +41,7 @@ let productos =[
 
     {id:8 , img:"../img/tienda/halconmile.png",
             titulo: "Halcon milenario", 
-            descripcion:"Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica de la nave espacial del Halcón Milenario impresa en 3D" , 
+            descripcion:"Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario " , 
             precio:1000 },
 
     {id:9 , img:"../img/tienda/yodaBbPintado.png",
