@@ -1,8 +1,4 @@
-let elemento
-elemento = document
-console.log(elemento)
-
-// definicion de la bd de productos [string de objetos]
+// -------------------------definicion de la bd de productos [string de objetos]-------------------------------
 let productos =[
     {id:1 , img:"../img/tienda/bigben.png",
             titulo: "Big Ben" , 
@@ -54,6 +50,11 @@ let productos =[
             precio:1540}
 ]
 
+
+
+
+// --------------  LLENADO DE SECTION CON TARJETAS DE PRODUCTOS EN PAGINA TIENDA  -------------------//
+
 const seccion_productos = document.querySelector("#section_shop")
 
 for(let producto of productos){
@@ -71,5 +72,94 @@ for(let producto of productos){
     `
     seccion_productos.appendChild(contenedor)
 }
+
+
+// ---------------------------------------------MENU DE OPCIONES ----------------------------------------------//
+//--------------------------- FUNCIONES PARA EL CARRITO --------------------------------//
+
+//definicion del carrito
+let carrito = []
+
+//agregar un producto al carrito
+function agregar_producto_carrito(nombre_art) {
+    let nuevoprod = {titulo:""}
+    nuevoprod.titulo = nombre_art
+    carrito.push(nuevoprod)
+}
+//mostrar productos
+function mostrar_carrito(carrito) {
+    let lista = []
+    for (prod of carrito){
+        lista.push(prod.titulo)
+    }
+    alert(lista)
+}
+//quitar el ultimo producto
+function quitar_ultimo_producto_carrito() {
+    carrito.pop()
+}
+//vaciar carrito
+function vaciar_carrito() {
+    carrito = [];
+    alert("Se vacio tu carrito :c")
+}
+
+
+//eliminar x producto del carrito // sigue sin funcionar
+// function elim_x_prod_del_carrito(nombre_art) {
+//     let index = []
+//     index = carrito.indexOf(nombre_art)
+//     for (item_carro of carrito){
+//         if (item_carro.titulo == nombre_art) {
+//             index.push(item_carro.indexOf)
+//         }
+//     carrito.splice(index,1)
+//     }
+// }
+
+
+//---------------------------------Menu ----------------------------------------//
+var menu = "BIENVENIDO AL MENU 2.0\n";
+    menu+= "------------*****------------ \n"
+    menu+= "Ingrese la opcion que desee usar:\n"
+    menu+= "1: Agregar item al carrito\n"
+    menu+= "2: Mostrar carrito\n"
+    menu+= "3: Quitar el ultimo elemento agregado\n"
+    menu+= "4: Vaciar carrito\n"
+    menu+= "5: \n"
+    menu+= "9: Ir a la tienda\n";
+
+var opcion = 0;
+do {
+    opcion = parseInt(prompt(menu))
+        switch (opcion) {
+            case 1:
+                let item = prompt("Ingrese el nombre del articulo a agregar")
+                agregar_producto_carrito(item)
+                console.log("Se agrego correctamente el item: "+ item);
+                break
+            case 2:
+                mostrar_carrito(carrito)
+                break
+            case 3:
+                quitar_ultimo_producto_carrito()
+                alert("Se elimino el ultimo producto correctamente")
+                break
+                
+            case 4:
+                vaciar_carrito()
+                console.log("Se reestablecio el carrito ");
+                break
+            case 5:
+                
+                break
+            case 9:
+                alert("(｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
+                console.log(" (｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
+                corte = false
+                break;
+            default: break;
+        }
+    } while (opcion!=9);
 
 
