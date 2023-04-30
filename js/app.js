@@ -134,6 +134,13 @@ function eliminarElemento_carrito(carrito, producto) {
     return carrito;
 }
 
+function calcular_total_carrito(){
+    let total = 0
+    for (elem of carrito){
+        total += elem.precio
+    }
+    return total
+}
 
 //---------------------------------Menu ----------------------------------------//
 var menu = "BIENVENIDO AL MENU 2.0\n";
@@ -145,6 +152,7 @@ var menu = "BIENVENIDO AL MENU 2.0\n";
     menu+= "4: Vaciar carrito\n"
     menu+= "5: Quitar un producto (Mediante nombre) \n"
     menu+= "6: Mostrar catalogo de productos\n"
+    menu+= "7: Mostrar el total del carrito\n"
     menu+= "9: Ir a la tienda\n";
 
 var opcion = 0;
@@ -188,12 +196,17 @@ do {
             case 6:
                 alert( mostrar_catalogo())
                 break
+            case 7:
+                alert("El total acumulado de su carrito es de: $"+ calcular_total_carrito())
+                break
             case 9:
                 alert("(｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
                 console.log(" (｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
                 corte = false
                 break;
-            default: break;
+            default: 
+                opcion = 9
+                break
         }
     } while (opcion!=9);
 
