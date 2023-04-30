@@ -104,18 +104,18 @@ function vaciar_carrito() {
     alert("Se vacio tu carrito :c")
 }
 
-
-//eliminar x producto del carrito // sigue sin funcionar
-// function elim_x_prod_del_carrito(nombre_art) {
-//     let index = []
-//     index = carrito.indexOf(nombre_art)
-//     for (item_carro of carrito){
-//         if (item_carro.titulo == nombre_art) {
-//             index.push(item_carro.indexOf)
-//         }
-//     carrito.splice(index,1)
-//     }
-// }
+function eliminarElemento_carrito(carrito, producto) {
+    let buscado = producto.titulo;
+    for (let i = 0; i < carrito.length; i++) {
+        if (carrito[i].titulo === buscado) {
+            carrito.splice(i, 1);
+            console.log("Se eliminó el producto");
+            break;
+            }
+    }
+    console.log("No se encontró el producto a eliminar");
+    return carrito;
+}
 
 
 //---------------------------------Menu ----------------------------------------//
@@ -126,7 +126,7 @@ var menu = "BIENVENIDO AL MENU 2.0\n";
     menu+= "2: Mostrar carrito\n"
     menu+= "3: Quitar el ultimo elemento agregado\n"
     menu+= "4: Vaciar carrito\n"
-    menu+= "5: \n"
+    menu+= "5: Quitar un producto (Mediante nombre) \n"
     menu+= "9: Ir a la tienda\n";
 
 var opcion = 0;
@@ -151,8 +151,12 @@ do {
                 console.log("Se reestablecio el carrito ");
                 break
             case 5:
-                
+                let producto = { titulo: "" };
+                let nombre = prompt("Ingrese el nombre del artículo a eliminar");
+                producto.titulo = nombre;
+                eliminarElemento_carrito(carrito, producto);
                 break
+
             case 9:
                 alert("(｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
                 console.log(" (｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
