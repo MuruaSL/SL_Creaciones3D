@@ -118,6 +118,7 @@ function mostrar_catalogo(){
         for (let i = 0; i < productos.length; i++) {
             catalogo += `"${productos[i].titulo}"`
         }
+        return catalogo
 }
 //
 function eliminarElemento_carrito(carrito, producto) {
@@ -143,7 +144,7 @@ var menu = "BIENVENIDO AL MENU 2.0\n";
     menu+= "3: Quitar el ultimo elemento agregado\n"
     menu+= "4: Vaciar carrito\n"
     menu+= "5: Quitar un producto (Mediante nombre) \n"
-    menu+= "6: Mostrar catalogo de productos"
+    menu+= "6: Mostrar catalogo de productos\n"
     menu+= "9: Ir a la tienda\n";
 
 var opcion = 0;
@@ -185,12 +186,8 @@ do {
                 eliminarElemento_carrito(carrito, producto);
                 break
             case 6:
-                let catalogo = []
-                for (let i = 0; i < productos.length; i++) {
-                    catalogo += `"${productos[i].titulo}"`
-                }
+                alert( mostrar_catalogo())
                 break
-
             case 9:
                 alert("(｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
                 console.log(" (｡◕‿◕｡) Gracias por usar el sistema (｡◕‿◕｡)")
