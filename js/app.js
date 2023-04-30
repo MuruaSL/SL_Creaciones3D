@@ -82,10 +82,19 @@ let carrito = []
 
 //agregar un producto al carrito
 function agregar_producto_carrito(nombre_art) {
-    let nuevoprod = {titulo:""}
-    nuevoprod.titulo = nombre_art
-    carrito.push(nuevoprod)
+    // Buscar el producto por su título
+    let producto_encontrado = productos.find(function(producto) {
+        return producto.titulo === nombre_art;
+    });
+    // Si se encontró el producto, agregarlo al carrito
+    if (producto_encontrado) {
+        carrito.push(producto_encontrado);
+        console.log("Se agregó correctamente el producto: " + nombre_art);
+    } else {
+        console.log("No se encontró el producto: " + nombre_art);
+    }
 }
+
 //mostrar productos
 function mostrar_carrito(carrito) {
     let lista = []
@@ -103,7 +112,14 @@ function vaciar_carrito() {
     carrito = [];
     alert("Se vacio tu carrito :c")
 }
-
+//Mostrar catalogo de articulos 
+function mostrar_catalogo(){
+    let catalogo = []
+        for (let i = 0; i < productos.length; i++) {
+            catalogo += `"${productos[i].titulo}"`
+        }
+}
+//
 function eliminarElemento_carrito(carrito, producto) {
     let buscado = producto.titulo;
     for (let i = 0; i < carrito.length; i++) {
@@ -127,6 +143,7 @@ var menu = "BIENVENIDO AL MENU 2.0\n";
     menu+= "3: Quitar el ultimo elemento agregado\n"
     menu+= "4: Vaciar carrito\n"
     menu+= "5: Quitar un producto (Mediante nombre) \n"
+    menu+= "6: Mostrar catalogo de productos"
     menu+= "9: Ir a la tienda\n";
 
 var opcion = 0;
@@ -134,9 +151,20 @@ do {
     opcion = parseInt(prompt(menu))
         switch (opcion) {
             case 1:
-                let item = prompt("Ingrese el nombre del articulo a agregar")
-                agregar_producto_carrito(item)
-                console.log("Se agrego correctamente el item: "+ item);
+                let prod = prompt("Ingrese el nombre del articulo a agregar");
+                let producto_encontrado = null;
+                for (let i = 0; i < productos.length; i++) {
+                    if (productos[i].titulo === prod) {
+                        producto_encontrado = productos[i];
+                        break;
+                    }
+                }
+                if (producto_encontrado) {
+                agregar_producto_carrito(producto_encontrado.titulo);
+                console.log("Se agregó correctamente el producto: " + producto_encontrado.titulo);
+                }else {
+                console.log("No se encontró el producto: " + prod);
+                } 
                 break
             case 2:
                 mostrar_carrito(carrito)
@@ -155,6 +183,12 @@ do {
                 let nombre = prompt("Ingrese el nombre del artículo a eliminar");
                 producto.titulo = nombre;
                 eliminarElemento_carrito(carrito, producto);
+                break
+            case 6:
+                let catalogo = []
+                for (let i = 0; i < productos.length; i++) {
+                    catalogo += `"${productos[i].titulo}"`
+                }
                 break
 
             case 9:
