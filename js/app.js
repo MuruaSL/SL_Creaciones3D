@@ -89,8 +89,9 @@ function agregar_producto_carrito(nombre_art) {
     // Si se encontró el producto, agregarlo al carrito
     if (producto_encontrado) {
         carrito.push(producto_encontrado);
-        console.log("Se agregó correctamente el producto: " + nombre_art);
+        
     } else {
+        
         console.log("No se encontró el producto: " + nombre_art);
     }
 }
@@ -113,11 +114,23 @@ function vaciar_carrito() {
     alert("Se vacio tu carrito :c")
 }
 //Mostrar catalogo de articulos 
-function mostrar_catalogo(){
+function mostrar_catalogo2(){
     let catalogo = []
         for (let i = 0; i < productos.length; i++) {
-            catalogo += `"${productos[i].titulo}"`
+            catalogo += `${productos[i].titulo}`
         }
+        return catalogo
+}
+function mostrar_catalogo(){
+    let catalogo = []
+    catalogo += "-----------------------------Catalogo------------------------------\n"
+        for (let i = 0; i < productos.length; i++) {
+            catalogo += `${i}. ${productos[i].titulo}\n`
+
+        }
+    catalogo += "--------------------------------------------------------------------\n"
+    catalogo += "     Copie y pegue los nombres en la opcion 1 para comprar\n"
+    catalogo += "--------------------------------------------------------------------\n"
         return catalogo
 }
 //
@@ -127,10 +140,15 @@ function eliminarElemento_carrito(carrito, producto) {
         if (carrito[i].titulo === buscado) {
             carrito.splice(i, 1);
             console.log("Se eliminó el producto");
+            alert("Se elimino el articulo")
             break;
-            }
+        }
+        else{
+            console.log("No se encontró el producto a eliminar");
+            alert("No se encontró el producto a eliminar")
+        }
     }
-    console.log("No se encontró el producto a eliminar");
+    
     return carrito;
 }
 
@@ -170,8 +188,11 @@ do {
                 }
                 if (producto_encontrado) {
                 agregar_producto_carrito(producto_encontrado.titulo);
+                alert("Se agregó correctamente el producto: " + producto_encontrado.titulo)
                 console.log("Se agregó correctamente el producto: " + producto_encontrado.titulo);
+                
                 }else {
+                alert("No se encontró el producto: " + prod);
                 console.log("No se encontró el producto: " + prod);
                 } 
                 break
