@@ -36,7 +36,7 @@ let productos =[
             precio:1200 },
 
     {id:8 , img:"../img/tienda/halconmile.png",
-            titulo: "Halcon milenario", 
+            titulo: "Halcon Milenario", 
             descripcion:"Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario " , 
             precio:2000 },
 
@@ -45,7 +45,7 @@ let productos =[
             descripcion:"Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda" , 
             precio:1500 },
     {id:10 , img:"../img/tienda/calaberaLapicero.png",
-            titulo: "Craneo lapicero" , 
+            titulo: "Craneo Lapicero" , 
             descripcion:"Lapicero calavera detallado. Úsalo en la oficina, la escuela o en casa." , 
             precio:2000}
 ]
@@ -125,7 +125,7 @@ function mostrar_catalogo(){
     let catalogo = []
     catalogo += "-----------------------------Catalogo------------------------------\n"
         for (let i = 0; i < productos.length; i++) {
-            catalogo += `${i}. ${productos[i].titulo}\n`
+            catalogo += `${i}. ${productos[i].titulo} , Precio: $ ${productos[i].precio}\n`
 
         }
     catalogo += "--------------------------------------------------------------------\n"
@@ -178,6 +178,7 @@ do {
     opcion = parseInt(prompt(menu))
         switch (opcion) {
             case 1:
+                alert(mostrar_catalogo())
                 let prod = prompt("Ingrese el nombre del articulo a agregar");
                 let producto_encontrado = null;
                 for (let i = 0; i < productos.length; i++) {
@@ -226,7 +227,6 @@ do {
                 corte = false
                 break;
             default: 
-                opcion = 9
                 break
         }
     } while (opcion!=9);
