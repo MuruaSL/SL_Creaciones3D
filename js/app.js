@@ -149,12 +149,7 @@ function eliminarElemento_carrito(carrito, producto) {
             alert("Se elimino el articulo")
             break;
         }
-        else{
-            console.log("No se encontró el producto a eliminar");
-            alert("No se encontró el producto a eliminar")
-        }
     }
-    
     return carrito;
 }
 
