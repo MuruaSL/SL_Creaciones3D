@@ -106,7 +106,13 @@ function mostrar_carrito(carrito) {
 }
 //quitar el ultimo producto
 function quitar_ultimo_producto_carrito() {
-    carrito.pop()
+    if (carrito != []){
+        carrito.pop()
+        alert("Se elimino el ultimo producto correctamente")
+    }
+    else{
+        alert("Su carrito ya está vacio")
+    }
 }
 //vaciar carrito
 function vaciar_carrito() {
@@ -133,7 +139,7 @@ function mostrar_catalogo(){
     catalogo += "--------------------------------------------------------------------\n"
         return catalogo
 }
-//
+// eliminarElemento_carrito X
 function eliminarElemento_carrito(carrito, producto) {
     let buscado = producto.titulo;
     for (let i = 0; i < carrito.length; i++) {
@@ -202,7 +208,6 @@ do {
                 break
             case 3:
                 quitar_ultimo_producto_carrito()
-                alert("Se elimino el ultimo producto correctamente")
                 break
                 
             case 4:
