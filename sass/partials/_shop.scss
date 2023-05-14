@@ -1,15 +1,93 @@
 @use "./colors";
 
-//768
-
-
+.barra-filtro{
+    background-color: colors.$color_grey;
+    margin-top: -8px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.texto-filtro{
+    padding-top: 1rem;
+    color: colors.$color_white;
+    padding-left: 3rem;
+}
+.div-botones{
     
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 580px){
+    .div-botones{
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .texto-filtro{
+        padding: 0;
+        padding-top: 1rem;
+        text-align: center;
+    }
+}
+.cerrado{
+    display: none;
+}
+.abierto{
+    display: block;
+}
+.menu-desplegable-carrito{
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color: colors.$color_white;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 3rem;
+    z-index: 1;
+    width: 320px;
+    height: 100vh;
+    
+}
+
+.boton-filtro{
+    flex-direction: row;
+    margin: 1rem;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    background-color: colors.$color_deep_brick;
+    &:hover{
+        transition: .7s;
+        transform: scale(120%);
+    }
+    boton-filtro::after{
+        right: -20px;
+    }
+}
+    
+.boton-carrito{
+    flex-direction: row;
+    margin: 1rem;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    background-color: colors.$color_grey_grey;
+    color:colors.$color_white;
+    &:hover{
+        transition: .7s;
+        background-color: #5c636a;
+        color: white;
+    }
+}
 .css_titulo_nuestrosprod{
     padding: 2rem;
     text-align: center;
     background-color: colors.$color_dark_grey;
     color: colors.$color_white;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
 }
 .contenedor-productos{
     display: grid;
@@ -79,5 +157,103 @@ color: black;
 @media (max-width: 768px){
     .contenedor-productos{
         grid-template-columns:  1fr  ;
+    }
+}
+
+
+//CARRITO 
+.h2-carrito{
+    margin-left: 3rem;
+}
+.contenedor-carrito{
+    background-color: colors.$color_deep_brick;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-items: center;
+    border-radius: 1rem;
+    margin-bottom: -1rem;
+}
+@media (max-width: 1400px){
+    .contenedor-carrito{
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1200px){
+    .contenedor-carrito{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 800px){
+    .contenedor-carrito{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    .contenedor-carrito{
+        grid-template-columns:1fr 1fr ;
+    }
+}
+@media (max-width: 400px){
+    .contenedor-carrito{
+        grid-template-columns:1fr ;
+    }
+}
+
+
+
+.articulo-en-carrito{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: colors.$color_cream;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+.img-art-en-carrito{
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.boton-elim-art-carrito{
+    border: 0;
+    background-color: transparent;
+    color: colors.$color_grey_grey;
+}
+.div-boton-comprar{
+    background-color: colors.$color_deep_brick;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.boton-comprar{
+    border: 0;
+    background-color: colors.$color_dark_grey;
+    color: colors.$color_white;
+    height: 4rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1rem;
+    &:hover{
+        transition: .4s;
+        background-color: #5c636a;
+        color: white;
+    }
+}
+@media (max-width: 400px){
+    .div-boton-comprar{
+        justify-content: center;
     }
 }
