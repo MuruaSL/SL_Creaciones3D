@@ -148,6 +148,35 @@ function vaciar_carrito() {
     
 }
 
+let botonComprarCarrito = document.querySelector("#boton-comprar-carrito")
+
+botonComprarCarrito.addEventListener("click", comprarCarrito)
+function comprarCarrito(){
+
+  if (JSON.parse(localStorage.getItem("carrito")) == null || []) {
+    let carritovacio = [];
+    let carritovacioAJSON = JSON.stringify(carritovacio, "carrito");
+    localStorage.setItem("carrito", carritovacioAJSON);
+    // RecargarCarrito
+    cargarCarrito();
+    actualizar_total_carrito();
+    Swal.fire({
+      title: "¡Gracias!",
+      text: "Proximamente te contactaremos",
+      imageUrl: "../img/tienda/carrito/agradecimiento.jpg",
+      imageWidth: 300,
+      imageHeight: 400,
+      imageAlt: "Custom image"
+    });
+    
+  }
+  else{
+    alert("su carrito aun esta vacio")
+  }
+  }
+  //vaciar el carrito
+  
+
 // Función principal que se ejecuta al cargar la página
     cargarCarrito();
 //recalcular el total del carrito
