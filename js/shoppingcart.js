@@ -13,6 +13,7 @@ function cargarCarrito() {
         // Mostrar mensaje de carrito vacío
         var mensajeCarritoVacio = document.createElement("div");
         mensajeCarritoVacio.classList.add("sin-art-en-carrito");
+        mensajeCarritoVacio.classList.add("container-fluid");
         mensajeCarritoVacio.textContent =
             "AÚN NO TIENES NADA EN EL CARRITO :C VE A DAR UNA VUELTA POR LA TIENDA";
         contenedorCarrito.appendChild(mensajeCarritoVacio);
@@ -120,6 +121,7 @@ botonvaciarcarrito.forEach((boton) => {
 });
 
 function vaciar_carrito() {
+    // Agrego
     Swal.fire({
       title: "¿Estas seguro?",
       text: "No podras revertir esto luego!",
