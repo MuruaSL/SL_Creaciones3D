@@ -28,3 +28,5 @@ Colaboraciones:
 Derechos de autor:
   * Todos los derechos reservados MuruaSL y SL_Creaciones3D
   
+En memoria:
+  * En memoria de luna murua, excelente perro, mejor persona. 2013 - 2023
