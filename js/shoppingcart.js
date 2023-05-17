@@ -120,12 +120,27 @@ botonvaciarcarrito.forEach((boton) => {
 });
 
 function vaciar_carrito() {
-    let carritovacio = [];
-    let carritovacioAJSON = JSON.stringify(carritovacio, "carrito");
-    localStorage.setItem("carrito", carritovacioAJSON);
-  // RecargarCarrito
-    cargarCarrito();
-    actualizar_total_carrito();
+    Swal.fire({
+      title: "¿Estas seguro?",
+      text: "No podras revertir esto luego!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, Vacíalo"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Carrito vaciado", "¡Esperamos que lo vuelvas a llenar pronto!", "success");
+        let carritovacio = [];
+        let carritovacioAJSON = JSON.stringify(carritovacio, "carrito");
+        localStorage.setItem("carrito", carritovacioAJSON);
+        // RecargarCarrito
+        cargarCarrito();
+        actualizar_total_carrito();
+      }
+
+    });
+    
 }
 
 
