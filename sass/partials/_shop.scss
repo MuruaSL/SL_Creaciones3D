@@ -19,7 +19,11 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
+.sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
 @media (max-width: 580px){
     .div-botones{
     flex-direction: column;
@@ -160,100 +164,3 @@ color: black;
     }
 }
 
-
-//CARRITO 
-.h2-carrito{
-    margin-left: 3rem;
-}
-.contenedor-carrito{
-    background-color: colors.$color_deep_brick;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 1rem;
-    margin: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    justify-items: center;
-    border-radius: 1rem;
-    margin-bottom: -1rem;
-}
-@media (max-width: 1400px){
-    .contenedor-carrito{
-        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    }
-}
-@media (max-width: 1200px){
-    .contenedor-carrito{
-        grid-template-columns:1fr 1fr 1fr 1fr;
-    }
-}
-@media (max-width: 800px){
-    .contenedor-carrito{
-        grid-template-columns:1fr 1fr 1fr;
-    }
-}
-@media (max-width: 600px){
-    .contenedor-carrito{
-        grid-template-columns:1fr 1fr ;
-    }
-}
-@media (max-width: 400px){
-    .contenedor-carrito{
-        grid-template-columns:1fr ;
-    }
-}
-
-
-
-.articulo-en-carrito{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: colors.$color_cream;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 1rem;
-    width: 10rem;
-}
-
-.img-art-en-carrito{
-    width: 10rem;
-    border-radius: 1rem;
-}
-
-.boton-elim-art-carrito{
-    border: 0;
-    background-color: transparent;
-    color: colors.$color_grey_grey;
-}
-.div-boton-comprar{
-    background-color: colors.$color_deep_brick;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-.boton-comprar{
-    border: 0;
-    background-color: colors.$color_dark_grey;
-    color: colors.$color_white;
-    height: 4rem;
-    border-radius: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 1rem;
-    &:hover{
-        transition: .4s;
-        background-color: #5c636a;
-        color: white;
-    }
-}
-@media (max-width: 400px){
-    .div-boton-comprar{
-        justify-content: center;
-    }
-}

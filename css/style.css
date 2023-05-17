@@ -24,6 +24,12 @@
   justify-content: space-around;
 }
 
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
 @media (max-width: 580px) {
   .div-botones {
     flex-direction: column;
@@ -166,6 +172,26 @@
     grid-template-columns: 1fr;
   }
 }
+.barra-volver-a-tienda {
+  background-color: #090f13;
+  height: 5rem;
+}
+
+.volver-tienda {
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.bi-box-arrow-left {
+  margin-right: 2rem;
+}
+
+.link-volver-a-tienda {
+  text-decoration: none;
+}
+
 .h2-carrito {
   margin-left: 3rem;
 }
@@ -181,6 +207,7 @@
   justify-items: center;
   border-radius: 1rem;
   margin-bottom: -1rem;
+  min-height: 50vh;
 }
 
 @media (max-width: 1400px) {
@@ -208,6 +235,18 @@
     grid-template-columns: 1fr;
   }
 }
+.sin-art-en-carrito {
+  background-color: aliceblue;
+  width: 82vw;
+  text-align: justify;
+  height: 50vh;
+  margin: 5rem;
+}
+
+.displaynone {
+  display: none;
+}
+
 .articulo-en-carrito {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -218,6 +257,7 @@
   justify-content: space-between;
   border-radius: 1rem;
   width: 10rem;
+  max-height: 17rem;
 }
 
 .img-art-en-carrito {
@@ -242,6 +282,11 @@
   border-bottom-right-radius: 1rem;
 }
 
+@media (max-width: 768px) {
+  .div-boton-comprar {
+    flex-direction: column;
+  }
+}
 .boton-comprar {
   border: 0;
   background-color: #171f25;
@@ -256,6 +301,19 @@
   transition: 0.4s;
   background-color: #5c636a;
   color: white;
+}
+
+.h3-total {
+  border: 0;
+  border-radius: 1rem;
+  background-color: #171f25;
+  color: white;
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 400px) {
