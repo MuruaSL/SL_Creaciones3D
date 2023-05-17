@@ -41,24 +41,10 @@
     text-align: center;
   }
 }
-.cerrado {
-  display: none;
-}
-
-.abierto {
-  display: block;
-}
-
-.menu-desplegable-carrito {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: white;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 3rem;
-  z-index: 1;
-  width: 320px;
-  height: 100vh;
+.btn.active {
+  background-color: #090f13;
+  border-color: #dc3545;
+  border-width: 3px;
 }
 
 .boton-filtro {
@@ -68,14 +54,13 @@
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 2rem;
-  background-color: #752e2b;
+  background-color: #090f13;
 }
 .boton-filtro:hover {
   transition: 0.7s;
-  transform: scale(120%);
-}
-.boton-filtro boton-filtro::after {
-  right: -20px;
+  background-color: #090f13;
+  border-color: #dc3545;
+  border-width: 3px;
 }
 
 .boton-carrito {
@@ -85,12 +70,13 @@
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 2rem;
-  background-color: #5c636a;
-  color: white;
+  background-color: white;
+  color: #090f13;
 }
+
 .boton-carrito:hover {
   transition: 0.7s;
-  background-color: #5c636a;
+  background-color: #000000;
   color: white;
 }
 
@@ -237,21 +223,29 @@
   }
 }
 .sin-art-en-carrito {
-  background-color: #f2eab7;
-  margin: 0px;
-  border-radius: 2rem;
-  padding: 2rem;
-  font-size: x-large;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 25px;
   font-weight: 650;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  width: 75%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+  padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  border-radius: 2rem;
+  color: #131313;
+  background-color: #f2eab7;
+  letter-spacing: 0.1rem;
+  text-shadow: -1px 1px 1px #c6c4c4, -1px 2px 1px #cbc9c8, -2px 4px 1px #cfcdcd, -3px 6px 1px #d4d2d1, -4px 8px 1px #d8d6d5, -5px 0px 1px #dbdad9, -6px 2px 1px #dfdddc, -7px 4px 1px #e2e0df, -8px 6px 1px #e4e3e2;
 }
 
+@media (min-width: 200px) {
+  .sin-art-en-carrito {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 65vw;
+  }
+}
 @media (min-width: 400px) {
   .sin-art-en-carrito {
     background-color: #f2eab7;
@@ -383,7 +377,11 @@ ol, ul {
 }
 
 .currentpage {
-  color: #c90a02;
+  color: #f4d7d7;
+}
+
+.nav-link:hover {
+  color: #f4d7d7;
 }
 
 .nav_style_css {

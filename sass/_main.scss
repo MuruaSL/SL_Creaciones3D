@@ -27,7 +27,10 @@ ol, ul {
     --bs-navbar-padding-y: 0rem;
 }
 .currentpage{
-    color: colors.$color_red;
+    color: colors.$color_contrastRedNavbar;
+}
+.nav-link:hover{
+    color: colors.$color_contrastRedNavbar
 }
 .nav_style_css{
     background-color:colors.$color_deep_brick;

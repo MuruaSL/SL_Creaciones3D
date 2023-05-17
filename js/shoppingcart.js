@@ -15,7 +15,7 @@ function cargarCarrito() {
         mensajeCarritoVacio.classList.add("sin-art-en-carrito");
         mensajeCarritoVacio.classList.add("container-fluid");
         mensajeCarritoVacio.textContent =
-            "AÚN NO TIENES NADA EN EL CARRITO :C VE A DAR UNA VUELTA POR LA TIENDA";
+          "VE A DAR UNA VUELTA POR LA TIENDA, AÚN NO TIENES NADA EN EL CARRITO :C ";
         contenedorCarrito.appendChild(mensajeCarritoVacio);
     } 
     else {
@@ -144,8 +144,6 @@ function vaciar_carrito() {
     });
     
 }
-
-
 
 // Función principal que se ejecuta al cargar la página
     cargarCarrito();

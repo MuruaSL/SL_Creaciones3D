@@ -63,24 +63,41 @@
 }
 
 .sin-art-en-carrito{
-    background-color: colors.$color_cream;
-    margin: 0px;
-    border-radius: 2rem;
-    padding: 2rem;
-    font-size: x-large;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 25px;
     font-weight: 650;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 75%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    border-radius: 2rem;
+    color: #131313;
+    background-color: colors.$color_cream;
+    letter-spacing: .1rem;
+    text-shadow: 
+    -1px 1px 1px #c6c4c4, 
+    -1px 2px 1px #cbc9c8, 
+    -2px 4px 1px #cfcdcd, 
+    -3px 6px 1px #d4d2d1, 
+    -4px 8px 1px #d8d6d5, 
+    -5px 0px 1px #dbdad9, 
+    -6px 2px 1px #dfdddc, 
+    -7px 4px 1px #e2e0df, 
+    -8px 6px 1px #e4e3e2;
+
 }
 
 // SE LE DIO WIDTH MEDIANTE VW AL MENSAJE DEL CARRITO SIN ARTICULOS EN LA PROGRESION DE RESOLUCIONES
 // YA QUE ORIGINALMENTE AL CAMBIAR DE CELULAR A ESCRITORIO, PASA DE DISPLAY GRID 1FR A VARIOS FR
 // POR LO QUE EL MENSAJE NO SE ADAPTABA AUNQUE FUERA CONTAINER FLUID, YA QUE NO PODIA OCUPAR VARIOS ESPACIOS LA MISMO TIEMPO
+@media (min-width: 200px){
+    .sin-art-en-carrito{
+    margin-left: .5rem ;
+    margin-right: .5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 65vw;
+}}
 @media (min-width: 400px){
     .sin-art-en-carrito{
     background-color: colors.$color_cream;
@@ -190,4 +207,6 @@
         justify-content: center;
     }
 }
+
+
 
