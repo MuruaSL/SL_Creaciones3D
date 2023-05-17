@@ -235,6 +235,16 @@ function agregar_producto_al_carrito(evento){
         carrito.push(prodAAgregar)
         console.log(carrito);
     }
+    ////////////////////////////////////
+    /// AGREGO EL MENSAJE TIPO ALERT ///
+    ////////////////////////////////////
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Producto agregado correctamente al carrito",
+        showConfirmButton: false,
+        timer: 2200
+    });
 
     //recupero y luego agrego el producto al localstorage
     let carritoaJSON = JSON.stringify(carrito,"carrito");
