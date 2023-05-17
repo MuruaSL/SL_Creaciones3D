@@ -246,6 +246,11 @@
     width: 65vw;
   }
 }
+@media (max-width: 400px) {
+  .sin-art-en-carrito {
+    font-size: 15px;
+  }
+}
 @media (min-width: 400px) {
   .sin-art-en-carrito {
     background-color: #f2eab7;
@@ -277,6 +282,7 @@
 @media (min-width: 1100px) {
   .sin-art-en-carrito {
     width: 92vw;
+    font-size: 32px;
   }
 }
 .articulo-en-carrito {
