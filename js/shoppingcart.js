@@ -152,8 +152,18 @@ let botonComprarCarrito = document.querySelector("#boton-comprar-carrito")
 
 botonComprarCarrito.addEventListener("click", comprarCarrito)
 function comprarCarrito(){
-
-  if (JSON.parse(localStorage.getItem("carrito")) == null || []) {
+  let getcarrito =  JSON.parse(localStorage.getItem("carrito")) 
+  let longitud = getcarrito.length
+  if (longitud == 0) {
+    // alert("su carrito aun esta vacio");
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Tu carrito aún esta vacio ",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  } else {
     let carritovacio = [];
     let carritovacioAJSON = JSON.stringify(carritovacio, "carrito");
     localStorage.setItem("carrito", carritovacioAJSON);
@@ -168,10 +178,6 @@ function comprarCarrito(){
       imageHeight: 400,
       imageAlt: "Custom image"
     });
-    
-  }
-  else{
-    alert("su carrito aun esta vacio")
   }
   }
   //vaciar el carrito
