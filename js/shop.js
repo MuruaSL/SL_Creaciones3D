@@ -1,136 +1,3 @@
-// productos
-
-const productos = [
-    {
-        id:"BigBen",
-        img: "../img/tienda/bigben.png",
-        titulo: "Big Ben",
-        descripcion:"Agrega un toque de la arquitectura icónica de Londres a tu hogar con nuestra detallada pieza",
-        categoria: {
-            nombre:"Decoracion",
-            id:"Decoracion",
-        },
-        precio: 1000,
-        cantidad:0,
-    },
-
-    {
-        id:"TorreEifelDetallada",
-        img: "../img/tienda/eifelcomplex.png",
-        titulo: "Torre Eifel Detallada",
-        descripcion:"Celebra la belleza y el encanto de París con nuestra Torre Eiffel de detalles precisos y elegantes",
-        categoria: {
-            nombre:"Decoracion",
-            id:"Decoracion",
-        },
-        precio: 1800,
-        cantidad:0,
-    },
-
-    {
-        id:"CristoRedentor",
-        img: "../img/tienda/cristoredentor.png",
-        titulo: "Cristo Redentor",
-        descripcion:"Añade un toque de la cultura brasileña a tu hogar con nuestra estatua del Cristo Redentor en 3D",
-        categoria: {
-            nombre:"Decoracion",
-            id:"Decoracion",
-        },
-        precio: 1200,
-        cantidad:0,
-    },
-
-    {
-        id:"Nefertiti",
-        img: "../img/tienda/nefertitisNSFW.png",
-        titulo: "Nefertiti (NSFW)",
-        descripcion:"Sumérgete en la belleza de la cultura egipcia con nuestra estatuilla de la reina Nefertiti ¡Perfecta como pieza de colección!",
-        categoria: {
-            nombre:"Figuras",
-            id:"Figuras",
-        },
-        precio: 1900,
-        cantidad:0,
-    },
-
-    {
-        id:"CamelloVoronoi",
-        img: "../img/tienda/camellovonoroid.png",
-        titulo: "Camello (Voronoi)",
-        descripcion:"Añade una dimensión moderna y vanguardista a tu decoración con nuestra estatuilla de camello con diseño vonoroi.",
-        categoria: {
-            nombre:"Decoracion",
-            id:"Decoracion",
-        },
-        precio: 1150,
-        cantidad:0,
-    },
-
-    {
-        id:"EsfingeGuiza",
-        img: "../img/tienda/esfigie.png",
-        titulo: "Esfinge de Guiza",
-        descripcion:"Déjate seducir por la enigmática presencia de la Gran Esfinge de Guiza con nuestra estatuilla 3D",
-        categoria: {
-            nombre:"Decoracion",
-            id:"Decoracion",
-        },
-        precio: 1300,
-        cantidad:0,
-    },
-
-    {
-        id:"Mandalorian",
-        img: "../img/tienda/mandalorian.png",
-        titulo: "Mandalorian",
-        descripcion:"Añade un toque de la galaxia muy, muy lejana a tu hogar con nuestra estatua del Mandaloriano",
-        categoria: {
-            nombre:"Figuras",
-            id:"Figuras",
-        },
-        precio: 1200,
-        cantidad:0,
-    },
-
-    {
-        id:"HalconMilenario",
-        img: "../img/tienda/halconmile.png",
-        titulo: "Halcon Milenario",
-        descripcion:"Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario ",
-        categoria: {
-            nombre:"Coleccion",
-            id:"Coleccion",
-        },
-        precio: 2000,
-        cantidad:0,
-    },
-
-    {
-        id:"BabyYoda",
-        img: "../img/tienda/yodaBbPintado.png",
-        titulo: "Baby Yoda",
-        descripcion:"Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda",
-        categoria: {
-            nombre:"Figuras",
-            id:"Figuras",
-        },
-        precio: 1500,
-        cantidad:0,
-    },
-    {
-        id: "CraneoLapicero",
-        img: "../img/tienda/calaberaLapicero.png",
-        titulo: "Craneo Lapicero",
-        descripcion:"Lapicero calavera detallado. Úsalo en la oficina, la escuela o en casa.",
-        categoria: {
-            nombre:"Funcionales",
-            id:"Funcionales",
-        },
-        precio: 2000,
-        cantidad:0,
-    }
-];
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////  DEFINICIONES  ///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -139,17 +6,20 @@ const contenedorProductos = document.querySelector("#section_shop");
 const botonesFiltro = document.querySelectorAll(".boton-filtro");
 const titulo_shop = document.querySelector("#titulo_nuestrosprod");
 let botonesAgregarAlCarro = document.querySelectorAll(".agregar-prod-carrito");
+let productos =[];
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////  FUNCIONES  ////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////
+/////// Traer productos del json////////
+////////////////////////////////////////
 
+const traerProductos = async () =>{
+    const jsonprod = await fetch ("../json/productos.json");
+    const data = await jsonprod.json();
+    productos = data
+    cargarProductos(productos)
+}
+traerProductos()
 
-
-
-//////////////////////////////////////////////////////////////////////////
-/////// CARGAR PRODUCTOS A LA TIENDA - TODOS EN PRIMERA EJECUCION ////////
-//////////////////////////////////////////////////////////////////////////
 function cargarProductos(productosElegidos){
 
     contenedorProductos.innerHTML= ""
@@ -263,7 +133,6 @@ function agregar_producto_al_carrito(evento){
 //mas arriba se define el carrito vacio, ahora lo que hago es cargarlo si es que hay uno en localstorage
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-cargarProductos(productos);
 
 
 
