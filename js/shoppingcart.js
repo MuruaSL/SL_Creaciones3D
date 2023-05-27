@@ -1,4 +1,11 @@
 
+/////////////////////////////////////////////////////////////////////
+/// guardar la barra de botones de compra si el carrito esta vacio///
+/////////////////////////////////////////////////////////////////////
+
+
+
+
 // Función para cargar el carrito
 function cargarCarrito() {
   // Recuperar el carrito del almacenamiento local
@@ -11,7 +18,13 @@ function cargarCarrito() {
   contenedorCarrito.innerHTML = "";
 
   if (productosEnCarrito.length === 0) {
-    // Mostrar mensaje de carrito vacío
+    //////////////NO CARGAR LA BARRA DE BOTONES DE COMPRA VACIADO Y TOTAL SI ESTA VACIO////////////////
+    var divComprar = document.querySelector("#div-boton-comprar");
+    divComprar.classList.add("desactivar");
+
+    //////////////////////////////////////
+    // Mostrar mensaje de carrito vacío///
+    //////////////////////////////////////
     var mensajeCarritoVacio = document.createElement("div");
     mensajeCarritoVacio.classList.add("sin-art-en-carrito");
     mensajeCarritoVacio.classList.add("container-fluid");
@@ -68,23 +81,59 @@ function eliminarProducto(productId) {
   var indiceProducto = productosEnCarrito.findIndex(function (producto) {
     return producto.id === productId;
   });
-
-  if (indiceProducto !== -1) {
-    // Reducir la cantidad del producto en 1
-    productosEnCarrito[indiceProducto].cantidad--;
-
-    // Eliminar el producto si la cantidad llega a 0
-    if (productosEnCarrito[indiceProducto].cantidad === 0) {
-      productosEnCarrito.splice(indiceProducto, 1);
-    }
-
-    // Guardar los productos actualizados en el almacenamiento local
-    localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
-    //recalcular el total del carrito
-    actualizar_total_carrito();
-    // Volver a cargar el carrito
-    cargarCarrito();
-  }
+  Swal.fire({
+    title: '¿Estas seguro de querer eliminarlo?',
+    text: "No podrás cancelar esta acción",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    cancelButtonText:'Cancelar',
+    confirmButtonText: 'Si, elimínalo '
+  }).then((result) => {
+    if (result.isConfirmed) {
+      let timerInterval
+      Swal.fire({
+        icon: 'success',
+        title: 'Eliminado Correctamente',
+        timer: 1500,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading()
+          const b = Swal.getHtmlContainer().querySelector('b')
+          timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+          }, 100)
+        },
+        willClose: () => {
+          clearInterval(timerInterval)
+        }
+      }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log('I was closed by the timer')
+        }
+      })
+      
+        if (indiceProducto !== -1) {
+          // Reducir la cantidad del producto en 1
+          productosEnCarrito[indiceProducto].cantidad--;
+      
+          // Eliminar el producto si la cantidad llega a 0
+          if (productosEnCarrito[indiceProducto].cantidad === 0) {
+            productosEnCarrito.splice(indiceProducto, 1);
+          }
+    
+        // Guardar los productos actualizados en el almacenamiento local
+        localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
+        //recalcular el total del carrito
+        actualizar_total_carrito();
+        // Volver a cargar el carrito
+        cargarCarrito();
+      }
+      }
+    })
+    
 }
 
 //////////////////////////////////////
@@ -186,3 +235,15 @@ function comprarCarrito() {
 cargarCarrito();
 //recalcular el total del carrito
 actualizar_total_carrito();
+
+
+
+
+
+
+
+
+
+
+
+

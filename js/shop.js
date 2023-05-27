@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const contenedorProductos = document.querySelector("#section_shop");
-const botonesFiltro = document.querySelectorAll(".boton-filtro");
+const botonesFiltro = document.querySelectorAll(".optDrop-filtro");
 const titulo_shop = document.querySelector("#titulo_nuestrosprod");
 let botonesAgregarAlCarro = document.querySelectorAll(".agregar-prod-carrito");
 let productos =[];
@@ -42,27 +42,27 @@ function cargarProductos(productosElegidos){
     actualizarListadoBotonesAgregarCarrito();
 }
 
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////FILTRAR PRODUCTOS//////////////////////////////////////////////////
-////// SI SE TOCA UN BOTON FILTRO SE RECARGAN LOS PRODUCTOS DE LA TIENDA CON LOS QUE TIENEN ID = BOTON/////
+////// SI SE TOCA UN BOTON FILTRO SE RECARGAN LOS PRODUCTOS DE LA TIENDA CON LOS QUE TIENEN categoria.nombre = BOTON.id/////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-botonesFiltro.forEach(boton=>{
-    //cuando se le da click al boton se "activa"
-    boton.addEventListener("click",(evento)=>{
-        //primero elimina el active de todos los votones y luego activa al que se dio click(le agrega clase active)
-        botonesFiltro.forEach(boton => boton.classList.remove("active"))
-        evento.currentTarget.classList.add("active")
-        if(evento.currentTarget.id != "Todos"){
-            // se filtran los productos cuando se usan los botones filtros- con el id de la categoria si la misma no es todos
-            const productosBoton = productos.filter(producto => producto.categoria.id === evento.currentTarget.id)
-            cargarProductos(productosBoton)
+botonesFiltro.forEach(boton => {
+    boton.addEventListener("click", (evento) => {
+        botonesFiltro.forEach(boton => boton.classList.remove("active"));
+        evento.currentTarget.classList.add("active");
+    
+        if (evento.currentTarget.id !== "Todos") {
+            const categoriaSeleccionada = evento.currentTarget.id;
+            const productosBoton = productos.filter(producto =>
+            producto.categoria.nombre.includes(categoriaSeleccionada)
+            );
+            cargarProductos(productosBoton);
+        } else {
+            cargarProductos(productos);
         }
-        // si se activa el filtro todos activa la carga de todos los productos
-        else{
-            cargarProductos(productos)
-        }
-    })
-})
+        });
+    });
 
 //////////////////////////////////////////////////////////////////////////////////////
 /// CADA VEZ QUE SE EJECUTA LE DA A LOS BOTONES AGREGAR AL CARRITO EL EVENTO CLICK ///

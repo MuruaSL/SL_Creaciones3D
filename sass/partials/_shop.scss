@@ -12,55 +12,86 @@
     color: colors.$color_white;
     padding-left: 3rem;
 }
-.div-botones{
-    
+.dropdown{
+    padding: 1rem;
     display: flex;
-    max-width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    
 }
+.dropdown-menu  {
+    width: 20rem;
+    padding: 2rem;
+    background-color: colors.$color_grey;
+    
+}
+.optDrop-filtro{
+    border-radius: 1rem;
+    background-color: colors.$color_black;
+    color: colors.$color_white;
+    margin-bottom: 1rem;
+    &:hover{
+        background-color: colors.$color_deep_brick;
+        color:colors.$color_white;
+        transition: .7s;
+        
+    }
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: colors.$color_deep_brick;
+    
+}
+
 .sticky{
     position: sticky;
     top: 0px;
     z-index: 1;
 }
 @media (max-width: 580px){
-    .div-botones{
-    flex-direction: column;
-    justify-content: space-around;
-    }
+    
     .texto-filtro{
         padding: 0;
         padding-top: 1rem;
         text-align: center;
     }
-}
+    .dropdown{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .a-carrito{
+        width: 92%;
+    }
+    .boton-carrito{
+        width: 100%;
+    }
 
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: colors.$color_black;
+}
+.dropdown-toggle{
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    border-width: 2px;
+    border-color: colors.$color_dark_grey;
+    margin: 1rem;;
+    background-color:colors.$color_white;
+    color:colors.$color_black;
+    &:hover{
+        transition: .7s;
+        background-color: colors.$color_black;
+        color: colors.$color_white
+    }
+}
 .btn.active{
     background-color: colors.$color_black;
     border-color: colors.$color_contrast_boton_activo;
     border-width: 3px;
 }
 
-.boton-filtro{
-    flex-direction: row;
-    margin: 1rem;
-    padding: .5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: 2rem;
-    background-color: colors.$color_black;
-    &:hover{
-        transition: .7s;
-        background-color: colors.$color_black;
-        border-color: colors.$color_contrast_boton_activo;
-        border-width: 3px;
-    }
-    
-}
-    
 .boton-carrito{
-    flex-direction: row;
     margin: 1rem;
     padding: .5rem;
     padding-left: 2rem;
@@ -72,8 +103,8 @@
 }
 .boton-carrito:hover{
         transition: .7s;
-        background-color: #000000;
-        color: white;
+        background-color: colors.$color_black;
+        color:colors.$color_white
     }
 .css_titulo_nuestrosprod{
     padding: 2rem;

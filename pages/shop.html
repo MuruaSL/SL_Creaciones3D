@@ -51,14 +51,29 @@
         
         <h2 id="titulo_nuestrosprod" class="css_titulo_nuestrosprod">Todos nuestros productos</h2>
         <div class="barra-filtro ">
-            <h3 class="texto-filtro">Filtrar:</h3> 
-            <div class="div-botones ">
-                <button id="Todos" type="button" class="btn btn-secondary btn-sm  boton-filtro active ">Todos</button>
-                <button id="Figuras" type="button" class="btn btn-secondary btn-sm boton-filtro">Figuras</button>
-                <button id="Decoracion" type="button" class="btn btn-secondary btn-sm boton-filtro">Decoracion</button>
-                <button id="Funcionales" type="button" class="btn btn-secondary btn-sm boton-filtro">Funcionales</button>
-                <a href="./shoppingcart.html"><button class="boton-carrito "><i class="bi bi-cart3"></i></button></a>
-            </div>
+                <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-funnel"></i> Filtrar
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item optDrop-filtro active" id="Todos">Todos</li>
+                        <li class="dropdown-item optDrop-filtro" id="Figuras">Figuras</li>
+                        <li class="dropdown-item optDrop-filtro" id="Decoracion">Decoracion</li>
+                        <li class="dropdown-item optDrop-filtro" id="Funcionales">Funcionales</li>
+                        <li class="dropdown-item optDrop-filtro" id="Macetas">Macetas</li>
+                        <li class="dropdown-item optDrop-filtro" id="DelMundo">Del Mundo</li>
+                        <li class="dropdown-item optDrop-filtro" id="Portavelas">Portavelas</li>
+                        <li class="dropdown-item optDrop-filtro" id="Coleccionables">Coleccionables</li>
+                        <li class="dropdown-item optDrop-filtro" id="Vehiculos">Vehiculos</li>
+                        <li class="dropdown-item optDrop-filtro" id="Festivas">Festivas</li>
+                        <li class="dropdown-item optDrop-filtro" id="Floreros">Floreros</li>
+                        <li class="dropdown-item optDrop-filtro" id="Accesorios">Accesorios </li>
+                        <li class="dropdown-item optDrop-filtro" id="NSFW">NSFW +18</li>
+                    </ul>
+                    <a href="./shoppingcart.html" class="a-carrito" ><button class="boton-carrito " type="button"><i class="bi bi-cart3"></i> Carrito</button><a/>
+                </div>
+            
+            
         </div>
         
         

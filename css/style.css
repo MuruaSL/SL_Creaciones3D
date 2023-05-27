@@ -17,11 +17,32 @@
   padding-left: 3rem;
 }
 
-.div-botones {
+.dropdown {
+  padding: 1rem;
   display: flex;
-  max-width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+}
+
+.dropdown-menu {
+  width: 20rem;
+  padding: 2rem;
+  background-color: #8c8e8f;
+}
+
+.optDrop-filtro {
+  border-radius: 1rem;
+  background-color: #090f13;
+  color: white;
+  margin-bottom: 1rem;
+}
+.optDrop-filtro:hover {
+  background-color: #752e2b;
+  color: white;
+  transition: 0.7s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #752e2b;
 }
 
 .sticky {
@@ -31,40 +52,51 @@
 }
 
 @media (max-width: 580px) {
-  .div-botones {
-    flex-direction: column;
-    justify-content: space-around;
-  }
   .texto-filtro {
     padding: 0;
     padding-top: 1rem;
     text-align: center;
   }
+  .dropdown {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .a-carrito {
+    width: 92%;
+  }
+  .boton-carrito {
+    width: 100%;
+  }
 }
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: #090f13;
+}
+
+.dropdown-toggle {
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+  border-width: 2px;
+  border-color: #171f25;
+  margin: 1rem;
+  background-color: white;
+  color: #090f13;
+}
+.dropdown-toggle:hover {
+  transition: 0.7s;
+  background-color: #090f13;
+  color: white;
+}
+
 .btn.active {
   background-color: #090f13;
   border-color: #dc3545;
   border-width: 3px;
 }
 
-.boton-filtro {
-  flex-direction: row;
-  margin: 1rem;
-  padding: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 2rem;
-  background-color: #090f13;
-}
-.boton-filtro:hover {
-  transition: 0.7s;
-  background-color: #090f13;
-  border-color: #dc3545;
-  border-width: 3px;
-}
-
 .boton-carrito {
-  flex-direction: row;
   margin: 1rem;
   padding: 0.5rem;
   padding-left: 2rem;
@@ -76,7 +108,7 @@
 
 .boton-carrito:hover {
   transition: 0.7s;
-  background-color: #000000;
+  background-color: #090f13;
   color: white;
 }
 
@@ -227,6 +259,8 @@
   font-size: 25px;
   font-weight: 650;
   padding: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -380,6 +414,10 @@
     width: 50%;
   }
 }
+.desactivar {
+  display: none;
+}
+
 /* -----------------------------General Resets--------------------------------------*/
 * {
   margin: 0px;

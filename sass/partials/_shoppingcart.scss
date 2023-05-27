@@ -5,6 +5,7 @@
     height: 5rem;
 }
 
+
 .volver-tienda{
     color: colors.$color_white;
     padding-top: 1.2rem;
@@ -67,6 +68,8 @@
     font-size: 25px;
     font-weight: 650;
     padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
@@ -234,4 +237,7 @@
 @media (min-width: 1400px){
     .input-email{
     width: 50%;}
+}
+.desactivar{
+    display: none;
 }
