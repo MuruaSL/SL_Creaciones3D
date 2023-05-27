@@ -1,224 +1,308 @@
 [
-    {
-        "id": "BigBen",
-        "img": "../img/tienda/bigben.png",
-        "titulo": "Big Ben",
-        "descripcion": "Agrega un toque de la arquitectura icónica de Londres a tu hogar con nuestra detallada pieza",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1000,
-        "cantidad": 0
+  {
+    "id": "BigBen",
+    "img": "../img/tienda/bigben.png",
+    "titulo": "Big Ben",
+    "descripcion": "Agrega un toque de la arquitectura icónica de Londres a tu hogar con nuestra detallada pieza",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
+    "precio": 1000,
+    "cantidad": 0
+  },
 
-    {
-        "id": "TorreEifelDetallada",
-        "img": "../img/tienda/eifelcomplex.png",
-        "titulo": "Torre Eifel Detallada",
-        "descripcion": "Celebra la belleza y el encanto de París con nuestra Torre Eiffel de detalles precisos y elegantes",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1800,
-        "cantidad": 0
+  {
+    "id": "TorreEifelDetallada",
+    "img": "../img/tienda/eifelcomplex.png",
+    "titulo": "Torre Eifel Detallada",
+    "descripcion": "Celebra la belleza y el encanto de París con nuestra Torre Eiffel de detalles precisos y elegantes",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
+    "precio": 1800,
+    "cantidad": 0
+  },
 
-    {
-        "id": "CristoRedentor",
-        "img": "../img/tienda/cristoredentor.png",
-        "titulo": "Cristo Redentor",
-        "descripcion": "Añade un toque de la cultura brasileña a tu hogar con nuestra estatua del Cristo Redentor en 3D",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1200,
-        "cantidad": 0
+  {
+    "id": "CristoRedentor",
+    "img": "../img/tienda/cristoredentor.png",
+    "titulo": "Cristo Redentor",
+    "descripcion": "Añade un toque de la cultura brasileña a tu hogar con nuestra estatua del Cristo Redentor en 3D",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
+    "precio": 1200,
+    "cantidad": 0
+  },
 
-    {
-        "id": "Nefertiti",
-        "img": "../img/tienda/nefertitisNSFW.png",
-        "titulo": "Nefertiti",
-        "descripcion": "Sumérgete en la belleza de la cultura egipcia con nuestra estatuilla de la reina Nefertiti ¡Perfecta como pieza de colección!",
-        "categoria": {
-        "nombre": ["Figuras","DelMundo","NSFW"]
-        },
-        "precio": 1900,
-        "cantidad": 0
+  {
+    "id": "Nefertiti",
+    "img": "../img/tienda/nefertitisNSFW.png",
+    "titulo": "Nefertiti",
+    "descripcion": "Sumérgete en la belleza de la cultura egipcia con nuestra estatuilla de la reina Nefertiti ¡Perfecta como pieza de colección!",
+    "categoria": {
+      "nombre": ["Figuras", "DelMundo", "NSFW"]
     },
+    "precio": 1900,
+    "cantidad": 0
+  },
 
-    {
-        "id": "CamelloVoronoi",
-        "img": "../img/tienda/camellovonoroid.png",
-        "titulo": "Camello (Voronoi)",
-        "descripcion": "Añade una dimensión moderna y vanguardista a tu decoración con nuestra estatuilla de camello con diseño vonoroi.",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1150,
-        "cantidad": 0
+  {
+    "id": "CamelloVoronoi",
+    "img": "../img/tienda/camellovonoroid.png",
+    "titulo": "Camello (Voronoi)",
+    "descripcion": "Añade una dimensión moderna y vanguardista a tu decoración con nuestra estatuilla de camello con diseño vonoroi.",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
+    "precio": 1150,
+    "cantidad": 0
+  },
 
-    {
-        "id": "EsfingeGuiza",
-        "img": "../img/tienda/esfigie.png",
-        "titulo": "Esfinge de Guiza",
-        "descripcion": "Déjate seducir por la enigmática presencia de la Gran Esfinge de Guiza con nuestra estatuilla 3D",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1300,
-        "cantidad": 0
+  {
+    "id": "EsfingeGuiza",
+    "img": "../img/tienda/esfigie.png",
+    "titulo": "Esfinge de Guiza",
+    "descripcion": "Déjate seducir por la enigmática presencia de la Gran Esfinge de Guiza con nuestra estatuilla 3D",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
-    {
-        "id": "eifelSimple",
-        "img": "../img/tienda/eifelSimple.png",
-        "titulo": "Torre Eifel simple",
-        "descripcion": "Embellece tu hogar con una elegante escultura de la Torre Eiffel. Su diseño icónico y estilizado captura la esencia de París",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1000,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "estatuaLibertad",
-        "img": "../img/tienda/estatuaLibertad.png",
-        "titulo": "Estatua de la libertad",
-        "descripcion": "captura la emblemática figura que simboliza la libertad y la esperanza. Una pieza icónica que evoca admiración y añade un toque de grandeza a cualquier entorno.",
-        "categoria": {
-        "nombre": ["Decoracion","DelMundo"]
-        },
-        "precio": 1500,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "CraneoLapicero",
-        "img": "../img/tienda/calaberaLapicero.png",
-        "titulo": "Craneo Lapicero",
-        "descripcion": "Lapicero calavera detallado. Úsalo en la oficina, la escuela o en casa.",
-        "categoria": {
-        "nombre": ["Funcionales"]
-        },
-        "precio": 2000,
-        "cantidad": 0
+    "precio": 1300,
+    "cantidad": 0
+  },
+  {
+    "id": "eifelSimple",
+    "img": "../img/tienda/eifelSimple.png",
+    "titulo": "Torre Eifel simple",
+    "descripcion": "Embellece tu hogar con una elegante escultura de la Torre Eiffel. Su diseño icónico y estilizado captura la esencia de París",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
-    {
-        "id": "Mandalorian",
-        "img": "../img/tienda/mandalorian.png",
-        "titulo": "Mandalorian",
-        "descripcion": "Añade un toque de la galaxia muy, muy lejana a tu hogar con nuestra estatua del Mandaloriano",
-        "categoria": {
-        "nombre": ["Figuras","Coleccionables"]
-        },
-        "precio": 1200,
-        "cantidad": 0
+    "precio": 1000,
+    "cantidad": 0
+  },
+  {
+    "id": "estatuaLibertad",
+    "img": "../img/tienda/estatuaLibertad.png",
+    "titulo": "Estatua de la libertad",
+    "descripcion": "captura la emblemática figura que simboliza la libertad y la esperanza. Una pieza icónica que evoca admiración y añade un toque de grandeza a cualquier entorno.",
+    "categoria": {
+      "nombre": ["Decoracion", "DelMundo"]
     },
+    "precio": 1500,
+    "cantidad": 0
+  },
+  {
+    "id": "CraneoLapicero",
+    "img": "../img/tienda/calaberaLapicero.png",
+    "titulo": "Craneo Lapicero",
+    "descripcion": "Lapicero calavera detallado. Úsalo en la oficina, la escuela o en casa.",
+    "categoria": {
+      "nombre": ["Funcionales"]
+    },
+    "precio": 2000,
+    "cantidad": 0
+  },
+  {
+    "id": "Mandalorian",
+    "img": "../img/tienda/mandalorian.png",
+    "titulo": "Mandalorian",
+    "descripcion": "Añade un toque de la galaxia muy, muy lejana a tu hogar con nuestra estatua del Mandaloriano",
+    "categoria": {
+      "nombre": ["Figuras", "Coleccionables"]
+    },
+    "precio": 1200,
+    "cantidad": 0
+  },
 
-    {
-        "id": "HalconMilenario",
-        "img": "../img/tienda/halconmile.png",
-        "titulo": "Halcon Milenario",
-        "descripcion": "Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario ",
-        "categoria": {
-        "nombre": ["Coleccionables","Vehiculos"]
-        },
-        "precio": 2000,
-        "cantidad": 0
+  {
+    "id": "HalconMilenario",
+    "img": "../img/tienda/halconmile.png",
+    "titulo": "Halcon Milenario",
+    "descripcion": "Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario ",
+    "categoria": {
+      "nombre": ["Coleccionables", "Vehiculos"]
     },
+    "precio": 2000,
+    "cantidad": 0
+  },
 
-    {
-        "id": "BabyYoda",
-        "img": "../img/tienda/yodaBbPintado.png",
-        "titulo": "Baby Yoda",
-        "descripcion": "Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda",
-        "categoria": {
-        "nombre": ["Figuras","Coleccionables"]
-        },
-        "precio": 1500,
-        "cantidad": 0
+  {
+    "id": "BabyYoda",
+    "img": "../img/tienda/yodaBbPintado.png",
+    "titulo": "Baby Yoda",
+    "descripcion": "Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda",
+    "categoria": {
+      "nombre": ["Figuras", "Coleccionables"]
     },
-    {
-        "id": "floreroHoneycomb",
-        "img": "../img/tienda/floreroHoneyc.png",
-        "titulo": "Florero Honeycomb",
-        "descripcion": "Cautivante diseño de panal de abeja para realzar la belleza de tus flores.",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Floreros"]
-        },
-        "precio": 1200,
-        "cantidad": 0
+    "precio": 1500,
+    "cantidad": 0
+  },
+
+  {
+    "id": "velaHalloween",
+    "img": "../img/tienda/halloweenLantern.png",
+    "titulo": "Calabaza halloween",
+    "descripcion": "Agrega un toque festivo a tus noches con este encantador portavelas en forma de calabaza. Ideal para iluminar tus celebraciones de Halloween",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Portavelas", "Festivas"]
     },
-    {
-        "id": "RobertFutbolero",
-        "img": "../img/tienda/robertplantfutbol.png",
-        "titulo": "Robert Plant Futbolero",
-        "descripcion": "Une tu pasión por el fútbol y las plantas en una divertida maceta robert. ",
-        "categoria": {
-            "nombre": ["Funcionales","Macetas"]
-        },
-        "precio": 2000,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "RobertSentado",
-        "img": "../img/tienda/robertSentado.png",
-        "titulo": "Robert Sentado",
-        "descripcion": "Un robert plant con actitud tranquila, perfecta para tus plantas favoritas.",
-        "categoria": {
-        "nombre": ["Funcionales","Macetas"]
-        },
-        "precio": 1500,
-        "cantidad": 0
+    "precio": 1300,
+    "cantidad": 0
+  },
+  {
+    "id": "velaEspiral",
+    "img": "../img/tienda/velaEspiral.png",
+    "titulo": "Portavela Espiral",
+    "descripcion": "Añade elegancia moderna a tu espacio con este portavelas de diseño único en espiral.",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Portavelas"]
     },
-    {
-        "id": "GrootSentado",
-        "img": "../img/tienda/groot1.png",
-        "titulo": "Groot sentado",
-        "descripcion": "Una encantadora maceta para poner tus plantas con forma de Groot",
-        "categoria": {
-        "nombre": ["Funcionales","Macetas"]
-        },
-        "precio": 2500,
-        "cantidad": 0
+    "precio": 1000,
+    "cantidad": 0
+  },
+  {
+    "id": "velaRed",
+    "img": "../img/tienda/velaRed.png",
+    "titulo": "Portavelas Telaraña",
+    "descripcion": "Su forma clásica y sencilla combina perfectamente con cualquier estilo de decoración, brindando un ambiente acogedor.",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Portavelas"]
     },
-    
-    {
-        "id": "decoArbolito",
-        "img": "../img/tienda/decoNavidena.png",
-        "titulo": "Deco Arbolito",
-        "descripcion": "Un toque especial a tus festividade, son el regalo perfecto para hacer que tu árbol brille con recuerdos entrañables.",
-        "categoria": {
-        "nombre": ["Decoracion","Festivas"]
-        },
-        "precio": 300,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "anillos",
-        "img": "../img/tienda/anillos.png",
-        "titulo": "Anillos Varios",
-        "descripcion": "Consultanos acerca de la inmensa variedad de tipos de anillos que tenemos para ti",
-        "categoria": {
-        "nombre": ["Accesorios"]
-        },
-        "precio": 300,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "standXbox",
-        "img": "../img/tienda/standControlXbox.png",
-        "titulo": "Organizador xbox",
-        "descripcion": "Este modelo te permite apilar varios controles para mantener organizado tu rincon gamer",
-        "categoria": {
-        "nombre": ["Funcionales"]
-        },
-        "precio": 1500,
-        "cantidad": 0
-    }
+    "precio": 1100,
+    "cantidad": 0
+  },
+  {
+    "id": "velaLunaVoronoi",
+    "img": "../img/tienda/velaLunaVoloroid.png",
+    "titulo": "Portavelas Luna",
+    "descripcion": "Ilumina tus noches con un toque celestial con este portavelas en forma de media luna voronoi",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Portavelas"]
+    },
+    "precio": 1500,
+    "cantidad": 0
+  },
+  {
+    "id": "velaVoronoi",
+    "img": "../img/tienda/velaVoloroid2.png",
+    "titulo": "Portavelas voronoi",
+    "descripcion": "El diseño intricado de este modelo crea un efecto de luces y sombras fascinante.",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Portavelas"]
+    },
+    "precio": 1200,
+    "cantidad": 0
+  },
+  {
+    "id": "pequeLuna",
+    "img": "../img/tienda/pequeluna.png",
+    "titulo": "Luna Lamp",
+    "descripcion": "Consegui tu propia luna lamp, estas pueden ser de distinto tamaños (la de esta publicacion es la mas chica)",
+    "categoria": {
+      "nombre": ["Decoracion", "Portavelas"]
+    },
+    "precio": 500,
+    "cantidad": 0
+  },
+  {
+    "id": "floreroEspiralizado",
+    "img": "../img/tienda/floreroEspiraliz.png",
+    "titulo": "Florero Facetado",
+    "descripcion": "Un impresionante florero con un diseño espiral en facetas, que añade un toque de sofisticación a tu casa",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Floreros"]
+    },
+    "precio": 500,
+    "cantidad": 0
+  },
+  {
+    "id": "floreroHoneycomb",
+    "img": "../img/tienda/floreroHoneyc.png",
+    "titulo": "Florero Honeycomb",
+    "descripcion": "Cautivante diseño de panal de abeja para realzar la belleza de tus flores.",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Floreros"]
+    },
+    "precio": 1200,
+    "cantidad": 0
+  },
+  {
+    "id": "floreroFlor",
+    "img": "../img/tienda/floreroflor.png",
+    "titulo": "Florero Flor",
+    "descripcion": "Una hermosa fusión entre un florero y una flor, llenando tus espacios con elegancia y buen gusto.",
+    "categoria": {
+      "nombre": ["Funcionales", "Decoracion", "Floreros"]
+    },
+    "precio": 1000,
+    "cantidad": 0
+  },
+  {
+    "id": "RobertFutbolero",
+    "img": "../img/tienda/robertplantfutbol.png",
+    "titulo": "Robert Plant Futbolero",
+    "descripcion": "Une tu pasión por el fútbol y las plantas en una divertida maceta robert. ",
+    "categoria": {
+      "nombre": ["Funcionales", "Macetas"]
+    },
+    "precio": 2000,
+    "cantidad": 0
+  },
+  {
+    "id": "RobertSentado",
+    "img": "../img/tienda/robertSentado.png",
+    "titulo": "Robert Sentado",
+    "descripcion": "Un robert plant con actitud tranquila, perfecta para tus plantas favoritas.",
+    "categoria": {
+      "nombre": ["Funcionales", "Macetas"]
+    },
+    "precio": 1500,
+    "cantidad": 0
+  },
+  {
+    "id": "GrootSentado",
+    "img": "../img/tienda/groot1.png",
+    "titulo": "Groot sentado",
+    "descripcion": "Una encantadora maceta para poner tus plantas con forma de Groot",
+    "categoria": {
+      "nombre": ["Funcionales", "Macetas"]
+    },
+    "precio": 2500,
+    "cantidad": 0
+  },
+
+  {
+    "id": "decoArbolito",
+    "img": "../img/tienda/decoNavidena.png",
+    "titulo": "Deco Arbolito",
+    "descripcion": "Un toque especial a tus festividade, son el regalo perfecto para hacer que tu árbol brille con recuerdos entrañables.",
+    "categoria": {
+      "nombre": ["Decoracion", "Festivas"]
+    },
+    "precio": 300,
+    "cantidad": 0
+  },
+  {
+    "id": "anillos",
+    "img": "../img/tienda/anillos.png",
+    "titulo": "Anillos Varios",
+    "descripcion": "Consultanos acerca de la inmensa variedad de tipos de anillos que tenemos para ti",
+    "categoria": {
+      "nombre": ["Accesorios"]
+    },
+    "precio": 300,
+    "cantidad": 0
+  },
+  {
+    "id": "standXbox",
+    "img": "../img/tienda/standControlXbox.png",
+    "titulo": "Organizador xbox",
+    "descripcion": "Este modelo te permite apilar varios controles para mantener organizado tu rincon gamer",
+    "categoria": {
+      "nombre": ["Funcionales"]
+    },
+    "precio": 1500,
+    "cantidad": 0
+  }
 ]

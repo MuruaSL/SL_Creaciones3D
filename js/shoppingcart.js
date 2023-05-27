@@ -1,10 +1,6 @@
-
 /////////////////////////////////////////////////////////////////////
 /// guardar la barra de botones de compra si el carrito esta vacio///
 /////////////////////////////////////////////////////////////////////
-
-
-
 
 // Función para cargar el carrito
 function cargarCarrito() {
@@ -82,48 +78,48 @@ function eliminarProducto(productId) {
     return producto.id === productId;
   });
   Swal.fire({
-    title: '¿Estas seguro de querer eliminarlo?',
+    title: "¿Estas seguro de querer eliminarlo?",
     text: "No podrás cancelar esta acción",
-    icon: 'warning',
+    icon: "warning",
     showCancelButton: true,
-    confirmButtonColor: '#d33',
-    cancelButtonColor: '#3085d6',
-    cancelButtonText:'Cancelar',
-    confirmButtonText: 'Si, elimínalo '
+    confirmButtonColor: "#d33",
+    cancelButtonColor: "#3085d6",
+    cancelButtonText: "Cancelar",
+    confirmButtonText: "Si, elimínalo "
   }).then((result) => {
     if (result.isConfirmed) {
-      let timerInterval
+      let timerInterval;
       Swal.fire({
-        icon: 'success',
-        title: 'Eliminado Correctamente',
+        icon: "success",
+        title: "Eliminado Correctamente",
         timer: 1500,
         timerProgressBar: true,
         didOpen: () => {
-          Swal.showLoading()
-          const b = Swal.getHtmlContainer().querySelector('b')
+          Swal.showLoading();
+          const b = Swal.getHtmlContainer().querySelector("b");
           timerInterval = setInterval(() => {
-            b.textContent = Swal.getTimerLeft()
-          }, 100)
+            b.textContent = Swal.getTimerLeft();
+          }, 100);
         },
         willClose: () => {
-          clearInterval(timerInterval)
+          clearInterval(timerInterval);
         }
       }).then((result) => {
         /* Read more about handling dismissals below */
         if (result.dismiss === Swal.DismissReason.timer) {
-          console.log('I was closed by the timer')
+          console.log("I was closed by the timer");
         }
-      })
-      
-        if (indiceProducto !== -1) {
-          // Reducir la cantidad del producto en 1
-          productosEnCarrito[indiceProducto].cantidad--;
-      
-          // Eliminar el producto si la cantidad llega a 0
-          if (productosEnCarrito[indiceProducto].cantidad === 0) {
-            productosEnCarrito.splice(indiceProducto, 1);
-          }
-    
+      });
+
+      if (indiceProducto !== -1) {
+        // Reducir la cantidad del producto en 1
+        productosEnCarrito[indiceProducto].cantidad--;
+
+        // Eliminar el producto si la cantidad llega a 0
+        if (productosEnCarrito[indiceProducto].cantidad === 0) {
+          productosEnCarrito.splice(indiceProducto, 1);
+        }
+
         // Guardar los productos actualizados en el almacenamiento local
         localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
         //recalcular el total del carrito
@@ -131,9 +127,8 @@ function eliminarProducto(productId) {
         // Volver a cargar el carrito
         cargarCarrito();
       }
-      }
-    })
-    
+    }
+  });
 }
 
 //////////////////////////////////////
@@ -228,22 +223,7 @@ function comprarCarrito() {
   }
 }
 
-
-
-
 // Función principal que se ejecuta al cargar la página
 cargarCarrito();
 //recalcular el total del carrito
 actualizar_total_carrito();
-
-
-
-
-
-
-
-
-
-
-
-
