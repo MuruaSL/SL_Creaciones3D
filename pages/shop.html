@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>SL_Creaciones3D - Shop</title>
     <link rel="icon" type="image/x-icon" href="../img/logos/logo-favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
     <header class="sticky">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid nav_style_css">
-                <a href="../index.html"><img src="../img/logos/logo_navbar.png" alt="LogoSL_Creaciones3D" class="navbar_brand-size me-2 "></a>
+                <a href="../index.html"><img src="../img/logos/logo_navbar.png" alt="LogoSL_Creaciones3D"
+                        class="navbar_brand-size me-2 "></a>
                 <a class="navbar-brand white navbar_title-size" href="../index.html">SL_Creaciones3D</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link white " aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link white" href="./whoiam.html">Conoceme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link white" href="./gallery.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link white" href="./mostSelled.html">Lo mas vendido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link white" href="./myFavorites.html">Mis favoritos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link currentpage" href="./shop.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link white" href="./contact.html">Contactame</a>
-                    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link white " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="./whoiam.html">Conoceme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="./gallery.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="./mostSelled.html">Lo mas vendido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="./myFavorites.html">Mis favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link currentpage" href="./shop.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link white" href="./contact.html">Contactame</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        
+
         <h2 id="titulo_nuestrosprod" class="css_titulo_nuestrosprod">Todos nuestros productos</h2>
         <div class="barra-filtro ">
-            <h3 class="texto-filtro">Filtrar:</h3> 
-            <div class="div-botones ">
-                <button id="Todos" type="button" class="btn btn-secondary btn-sm  boton-filtro active ">Todos</button>
-                <button id="Figuras" type="button" class="btn btn-secondary btn-sm boton-filtro">Figuras</button>
-                <button id="Decoracion" type="button" class="btn btn-secondary btn-sm boton-filtro">Decoracion</button>
-                <button id="Funcionales" type="button" class="btn btn-secondary btn-sm boton-filtro">Funcionales</button>
-                <a href="./shoppingcart.html"><button class="boton-carrito "><i class="bi bi-cart3"></i></button></a>
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-funnel"></i> Filtrar
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item optDrop-filtro active" id="Todos">Todos</li>
+                    <li class="dropdown-item optDrop-filtro" id="Figuras">Figuras</li>
+                    <li class="dropdown-item optDrop-filtro" id="Decoracion">Decoracion</li>
+                    <li class="dropdown-item optDrop-filtro" id="Funcionales">Funcionales</li>
+                    <li class="dropdown-item optDrop-filtro" id="Macetas">Macetas</li>
+                    <li class="dropdown-item optDrop-filtro" id="DelMundo">Del Mundo</li>
+                    <li class="dropdown-item optDrop-filtro" id="Portavelas">Portavelas</li>
+                    <li class="dropdown-item optDrop-filtro" id="Coleccionables">Coleccionables</li>
+                    <li class="dropdown-item optDrop-filtro" id="Vehiculos">Vehiculos</li>
+                    <li class="dropdown-item optDrop-filtro" id="Festivas">Festivas</li>
+                    <li class="dropdown-item optDrop-filtro" id="Floreros">Floreros</li>
+                    <li class="dropdown-item optDrop-filtro" id="Accesorios">Accesorios </li>
+                    <li class="dropdown-item optDrop-filtro" id="NSFW">NSFW +18</li>
+                </ul>
+                <a href="./shoppingcart.html" class="a-carrito"><button class="boton-carrito " type="button"><i
+                            class="bi bi-cart3"></i> Carrito</button><a />
             </div>
+
+
         </div>
-        
-        
+
+
         <section class="contenedor-productos" id="section_shop">
             <!-- //aca se inyectan los productos mediante js -->
         </section>
-        
+
     </main>
     <footer class="bg-black">
-        <p class="footer_text">© 2023 SL_Creaciones3D - Todos los derechos reservados. Desarrollado por 
-            <a title="pagina personal portfolio desarrollador" href="https://github.com/MuruaSL">Murua Sergio Leonardo</a>.
+        <p class="footer_text">© 2023 SL_Creaciones3D - Todos los derechos reservados. Desarrollado por
+            <a title="pagina personal portfolio desarrollador" href="https://github.com/MuruaSL">Murua Sergio
+                Leonardo</a>.
         </p>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
     <script src="../js/shop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
