@@ -140,92 +140,6 @@
         "precio": 1500,
         "cantidad": 0
     },
-    
-    {
-        "id": "velaHalloween",
-        "img": "../img/tienda/halloweenLantern.png",
-        "titulo": "Calabaza halloween",
-        "descripcion": "Agrega un toque festivo a tus noches con este encantador portavelas en forma de calabaza. Ideal para iluminar tus celebraciones de Halloween",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Portavelas","Festivas"]
-        },
-        "precio": 1300,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "velaEspiral",
-        "img": "../img/tienda/velaEspiral.png",
-        "titulo": "Portavela Espiral",
-        "descripcion": "Añade elegancia moderna a tu espacio con este portavelas de diseño único en espiral.",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Portavelas"]
-        },
-        "precio": 1000,
-        "cantidad": 0
-    }
-    ,
-    
-    {
-        "id": "velaRed",
-        "img": "../img/tienda/velaRed.png",
-        "titulo": "Portavelas Telaraña",
-        "descripcion": "Su forma clásica y sencilla combina perfectamente con cualquier estilo de decoración, brindando un ambiente acogedor.",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Portavelas"]
-        },
-        "precio": 1100,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "velaLunaVoronoi",
-        "img": "../img/tienda/velaLunaVoloroid.png",
-        "titulo": "Portavelas Luna",
-        "descripcion": "Ilumina tus noches con un toque celestial con este portavelas en forma de media luna voronoi",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Portavelas"]
-        },
-        "precio": 1500,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "velaVoronoi",
-        "img": "../img/tienda/velavoloroid2.png",
-        "titulo": "Portavelas voronoi",
-        "descripcion": "El diseño intricado de este modelo crea un efecto de luces y sombras fascinante.",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Portavelas"]
-        },
-        "precio": 1200,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "pequeLuna",
-        "img": "../img/tienda/pequeluna.png",
-        "titulo": "Luna Lamp",
-        "descripcion": "Consegui tu propia luna lamp, estas pueden ser de distinto tamaños (la de esta publicacion es la mas chica)",
-        "categoria": {
-        "nombre": ["Decoracion","Portavelas"]
-        },
-        "precio": 500,
-        "cantidad": 0
-    }
-    ,
-    {
-        "id": "floreroEspiralizado",
-        "img": "../img/tienda/floreroEspiraliz.png",
-        "titulo": "Florero Facetado",
-        "descripcion": "Un impresionante florero con un diseño espiral en facetas, que añade un toque de sofisticación a tu casa",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Floreros"]
-        },
-        "precio": 500,
-        "cantidad": 0
-    }
-    ,
     {
         "id": "floreroHoneycomb",
         "img": "../img/tienda/floreroHoneyc.png",
@@ -236,20 +150,7 @@
         },
         "precio": 1200,
         "cantidad": 0
-    }
-    ,
-    {
-        "id": "floreroFlor",
-        "img": "../img/tienda/floreroFlor.png",
-        "titulo": "Florero Flor",
-        "descripcion": "Una hermosa fusión entre un florero y una flor, llenando tus espacios con elegancia y buen gusto.",
-        "categoria": {
-            "nombre": ["Funcionales","Decoracion","Floreros"]
-        },
-        "precio": 1000,
-        "cantidad": 0
-    }
-    ,
+    },
     {
         "id": "RobertFutbolero",
         "img": "../img/tienda/robertplantfutbol.png",
