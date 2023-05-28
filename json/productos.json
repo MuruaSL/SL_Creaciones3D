@@ -109,7 +109,7 @@
     "titulo": "Mandalorian",
     "descripcion": "Añade un toque de la galaxia muy, muy lejana a tu hogar con nuestra estatua del Mandaloriano",
     "categoria": {
-    "nombre": ["Figuras", "Coleccionables"]
+    "nombre": ["Figuras", "Coleccionables","StarsWars"]
     },
     "precio": 1200,
     "cantidad": 0
@@ -121,7 +121,7 @@
     "titulo": "Halcon Milenario",
     "descripcion": "Trae un poco de la emoción y la aventura de Star Wars a tu hogar con nuestra réplica del Halcón Milenario ",
     "categoria": {
-    "nombre": ["Coleccionables", "Vehiculos"]
+    "nombre": ["Coleccionables", "Vehiculos","StarsWars"]
     },
     "precio": 2000,
     "cantidad": 0
@@ -133,7 +133,7 @@
     "titulo": "Baby Yoda",
     "descripcion": "Trae la ternura del personaje más querido de Star Wars a tu hogar con nuestra réplica de Baby Yoda",
     "categoria": {
-    "nombre": ["Figuras", "Coleccionables"]
+    "nombre": ["Figuras", "Coleccionables","StarsWars"]
     },
     "precio": 1500,
     "cantidad": 0
@@ -304,5 +304,358 @@
     },
     "precio": 1500,
     "cantidad": 0
+},
+{
+    "id":"babosaFlex",
+    "img":"../img/tienda/babosaFlex.png",
+    "titulo":"Babosa Flexible",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Flexibles","Animales","juguetes","Coleccionables"]
+    },
+    "precio":1200,
+    "cantidad":0
+}
+,
+{
+    "id":"bicicletaFuncional",
+    "img":"../img/tienda/bicicletaFuncional.png",
+    "titulo":"Bicicleta Funcional",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Vehiculos","Coleccionables","Decoracion"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"buhoOrnamental",
+    "img":"../img/tienda/buhoOrnamental.png",
+    "titulo":"Buho Ornamental",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","Animales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"canastaYoda",
+    "img":"../img/tienda/canastaYoda.png",
+    "titulo":"Yoda Colgante",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["StarsWars","Decoracion","Coleccionables","Figuras","Festivas"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"chichenitza",
+    "img":"../img/tienda/chichenitza.png",
+    "titulo":"Chichén Itzá",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","DelMundo"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"deathStar",
+    "img":"../img/tienda/deathStar.png",
+    "titulo":"Estrella de la Muerte",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","StarsWars"]
+    },
+    "precio":2000,
+    "cantidad":0
+},
+{
+    "id":"decoArbolito2",
+    "img":"../img/tienda/decoNavidenaAlt.png",
+    "titulo":"Deco Arbolito 2",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","Festivas"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"venusDeMilo",
+    "img":"../img/tienda/estatuaSinBrazo.png",
+    "titulo":"Venus de Milo",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","DelMundo"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"gokuFigura",
+    "img":"../img/tienda/figuraGoku.png",
+    "titulo":"Goku sayayin",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Figuras","Coleccionables"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"funkoStanLee",
+    "img":"../img/tienda/funkoStanLee.png",
+    "titulo":"Funko StanLee",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Funko","Coleccionables","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"godzilla",
+    "img":"../img/tienda/godzilla.png",
+    "titulo":"Godzilla",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"gokuBlue",
+    "img":"../img/tienda/gokuBlue.png",
+    "titulo":"Goku Blue",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Figuras","Coleccionables"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"grootContento",
+    "img":"../img/tienda/grootContento.png",
+    "titulo":"Groot Contento",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Figuras","Funcionales","Macetas","Decoracion"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"grootCorazon",
+    "img":"../img/tienda/grootCorazon.png",
+    "titulo":"Groot Corazon",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Macetas","Coleccionables","Figuras","Decoracion","Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"grooPlantin",
+    "img":"../img/tienda/grootPlantin.png",
+    "titulo":"Groot plantín",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Decoracion","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"lapiceroADN",
+    "img":"../img/tienda/lapiceroADN.png",
+    "titulo":"Lapicero ADN",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"lapiceroRosca",
+    "img":"../img/tienda/lapiceroRosca.png",
+    "titulo":"Lapicero Rosca",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"llaveroGeometrico",
+    "img":"../img/tienda/llaveroGeo.png",
+    "titulo":"Llavero Geometrico",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Funcionales","Decoracion"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"llaveroStitch",
+    "img":"../img/tienda/llaverosStitch.png",
+    "titulo":"Llaveros Stitch",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Accesorios","Llaveros","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"mateFutbol",
+    "img":"../img/tienda/mateFutbol.png",
+    "titulo":"Mate Futbolero",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Mates","Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"mateStitchCabeza",
+    "img":"../img/tienda/mateStitchCabeza.png",
+    "titulo":"Mate Cabeza de Stitch",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Funcionales","Mates"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"mateStitchCuerpo",
+    "img":"../img/tienda/mateStitchCuerpo.png",
+    "titulo":"Mate Stitch Completo",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Funcionales","Mates"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"figuraNezuko",
+    "img":"../img/tienda/nezukoFigura.png",
+    "titulo":"Kamado Nezuko",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Figuras","Coleccionables"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"portaPinceles",
+    "img":"../img/tienda/portaPinceles.png",
+    "titulo":"Porta Pinceles",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"pokemonPrinplup",
+    "img":"../img/tienda/prinplupPokemon.png",
+    "titulo":"",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Pokemon","Coleccionables","Figuras","Animales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"longinusAyanamiRei",
+    "img":"../img/tienda/ReiAyanami.png",
+    "titulo":"Rei Ayanami Evangelion",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"sydneyOpera",
+    "img":"../img/tienda/sydneyOpera.png",
+    "titulo":"Opera de Sydney ",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Decoracion","DelMundo"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"SonicTails",
+    "img":"../img/tienda/tails.png",
+    "titulo":"Tails - Sonic",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Figuras"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"torresPetronas",
+    "img":"../img/tienda/torresPetronas.png",
+    "titulo":"Torres Petronas",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["DelMundo","Decoracion"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"unicornio",
+    "img":"../img/tienda/unicornio.png",
+    "titulo":"Unicornio",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Coleccionables","Animales"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"vegettaBlue",
+    "img":"../img/tienda/vegetaBlue.png",
+    "titulo":"Vegetta Blue",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Figuras","Coleccionables"]
+    },
+    "precio":1200,
+    "cantidad":0
+},
+{
+    "id":"portavelaChino",
+    "img":"../img/tienda/velaChina.png",
+    "titulo":"Portavelas Chino",
+    "descripcion":"",
+    "categoria":{
+        "nombre":["Portavelas","Decoracion","Funcionales"]
+    },
+    "precio":1200,
+    "cantidad":0
 }
 ]
