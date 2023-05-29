@@ -309,7 +309,7 @@
     "id":"babosaFlex",
     "img":"../img/tienda/babosaFlex.png",
     "titulo":"Babosa Flexible",
-    "descripcion":"",
+    "descripcion":" Diviértete y relájate con esta colorida babosa flexible que se adapta a diferentes posiciones y formas",
     "categoria":{
         "nombre":["Flexibles","Animales","juguetes","Coleccionables"]
     },
@@ -321,7 +321,7 @@
     "id":"bicicletaFuncional",
     "img":"../img/tienda/bicicletaFuncional.png",
     "titulo":"Bicicleta Funcional",
-    "descripcion":"",
+    "descripcion":"Agrega un toque encantador a tu espacio con esta réplica de bicicleta funcional en tamaño reducido",
     "categoria":{
         "nombre":["Vehiculos","Coleccionables","Decoracion"]
     },
@@ -332,7 +332,7 @@
     "id":"buhoOrnamental",
     "img":"../img/tienda/buhoOrnamental.png",
     "titulo":"Buho Ornamental",
-    "descripcion":"",
+    "descripcion":"Añade un toque de sabiduría y encanto a tu hogar con este hermoso búho ornamental. ",
     "categoria":{
         "nombre":["Decoracion","Animales"]
     },
@@ -343,7 +343,7 @@
     "id":"canastaYoda",
     "img":"../img/tienda/canastaYoda.png",
     "titulo":"Yoda Colgante",
-    "descripcion":"",
+    "descripcion":"Esta cápsula versátil puede ser utilizada como un encantador adorno para tu árbol de Navidad, un llavero especial o simplemente como una decoración temática de Star Wars",
     "categoria":{
         "nombre":["StarsWars","Decoracion","Coleccionables","Figuras","Festivas"]
     },
@@ -354,7 +354,7 @@
     "id":"chichenitza",
     "img":"../img/tienda/chichen_itza.png",
     "titulo":"Chichén Itzá",
-    "descripcion":"",
+    "descripcion":"Celebra la grandiosidad de la cultura maya con esta impresionante réplica de Chichén Itzá. Una pieza de decoración perfecta para los amantes de la historia y la arqueología.",
     "categoria":{
         "nombre":["Decoracion","DelMundo"]
     },
@@ -365,7 +365,7 @@
     "id":"deathStar",
     "img":"../img/tienda/deathStar.png",
     "titulo":"Estrella de la Muerte",
-    "descripcion":"",
+    "descripcion":"Deja que el lado oscuro llegue a tu hogar con esta réplica de la Estrella de la Muerte de Star Wars. Una pieza impresionante para los fanáticos de la saga galáctica",
     "categoria":{
         "nombre":["Coleccionables","StarsWars"]
     },
@@ -376,7 +376,7 @@
     "id":"decoArbolito2",
     "img":"../img/tienda/decoNavidenaAlt.png",
     "titulo":"Deco Arbolito 2",
-    "descripcion":"",
+    "descripcion":"Dale un toque de originalidad a tu árbol de Navidad con esta decoración única",
     "categoria":{
         "nombre":["Decoracion","Festivas"]
     },
@@ -387,7 +387,7 @@
     "id":"venusDeMilo",
     "img":"../img/tienda/estatuaSinBrazo.png",
     "titulo":"Venus de Milo",
-    "descripcion":"",
+    "descripcion":"Rinde homenaje a la belleza clásica con esta exquisita réplica de la Venus de Milo",
     "categoria":{
         "nombre":["Decoracion","DelMundo"]
     },
@@ -398,7 +398,7 @@
     "id":"gokuFigura",
     "img":"../img/tienda/figuraGoku.png",
     "titulo":"Goku sayayin",
-    "descripcion":"",
+    "descripcion":"Perfecta para los fanáticos de Dragon Ball que desean exhibir su devoción",
     "categoria":{
         "nombre":["Figuras","Coleccionables"]
     },
@@ -409,7 +409,7 @@
     "id":"funkoStanLee",
     "img":"../img/tienda/funkoStanLee.png",
     "titulo":"Funko StanLee",
-    "descripcion":"",
+    "descripcion":"Rinde homenaje al legendario Stan Lee con esta figura Funko Pop. Un tesoro para los seguidores del universo de los superhéroes",
     "categoria":{
         "nombre":["Funko","Coleccionables","Figuras"]
     },
@@ -420,18 +420,18 @@
     "id":"godzilla",
     "img":"../img/tienda/godzilla.png",
     "titulo":"Godzilla",
-    "descripcion":"",
+    "descripcion":"Invoca el poder y la majestuosidad del legendario Godzilla con esta figura impresionante",
     "categoria":{
         "nombre":["Coleccionables","Figuras"]
     },
-    "precio":1200,
+    "precio":3200,
     "cantidad":0
 },
 {
     "id":"gokuBlue",
     "img":"../img/tienda/gokuBlue.png",
     "titulo":"Goku Blue",
-    "descripcion":"",
+    "descripcion":"Lleva la intensidad de Goku en su forma Super Saiyajin Blue a tu colección con esta figura detallada",
     "categoria":{
         "nombre":["Figuras","Coleccionables"]
     },
@@ -442,7 +442,7 @@
     "id":"grootContento",
     "img":"../img/tienda/grootContento.png",
     "titulo":"Groot Contento",
-    "descripcion":"",
+    "descripcion":"Agrega un toque de alegría y ternura a tu espacio con esta encantadora figura de Groot, además es una maceta!",
     "categoria":{
         "nombre":["Coleccionables","Figuras","Funcionales","Macetas","Decoracion"]
     },
@@ -453,7 +453,7 @@
     "id":"grootCorazon",
     "img":"../img/tienda/grootCorazon.png",
     "titulo":"Groot Corazon",
-    "descripcion":"",
+    "descripcion":" Expresa amor y amistad con esta figura de Groot que lleva un corazón en sus manos, Ademas tambien es una maceta!",
     "categoria":{
         "nombre":["Macetas","Coleccionables","Figuras","Decoracion","Funcionales"]
     },
@@ -461,21 +461,21 @@
     "cantidad":0
 },
 {
-    "id":"grooPlantin",
+    "id":"grootPlantin",
     "img":"../img/tienda/grootPlantin.png",
     "titulo":"Groot plantín",
-    "descripcion":"",
+    "descripcion":"Aporta un toque de naturaleza y originalidad con esta pequeña figura de Groot bebe",
     "categoria":{
         "nombre":["Coleccionables","Decoracion","Figuras"]
     },
-    "precio":1200,
+    "precio":900,
     "cantidad":0
 },
 {
     "id":"lapiceroADN",
     "img":"../img/tienda/lapiceroADN.png",
     "titulo":"Lapicero ADN",
-    "descripcion":"",
+    "descripcion":"Organiza tus bolígrafos y lápices de forma única con este lapicero en forma de hélice de ADN",
     "categoria":{
         "nombre":["Decoracion","Funcionales"]
     },
@@ -486,139 +486,139 @@
     "id":"lapiceroRosca",
     "img":"../img/tienda/lapiceroRosca.png",
     "titulo":"Lapicero Rosca",
-    "descripcion":"",
+    "descripcion":"Dale un giro divertido a tu escritorio con este lapicero en forma de rosca. Ideal para mantener tus bolígrafos y lápices ordenados de manera creativa",
     "categoria":{
         "nombre":["Decoracion","Funcionales"]
     },
-    "precio":1200,
+    "precio":600,
     "cantidad":0
 },
 {
     "id":"llaveroGeometrico",
     "img":"../img/tienda/llaveroGeo.png",
     "titulo":"Llavero Geometrico",
-    "descripcion":"",
+    "descripcion":"Agrega un toque orden y modernizacion a tus llaves con este set!",
     "categoria":{
         "nombre":["Funcionales","Decoracion"]
     },
-    "precio":1200,
+    "precio":1500,
     "cantidad":0
 },
 {
     "id":"llaveroStitch",
     "img":"../img/tienda/llaverosStitch.png",
     "titulo":"Llaveros Stitch",
-    "descripcion":"",
+    "descripcion":"Lleva contigo la ternura y la travesura de Stitch con este encantador llavero",
     "categoria":{
         "nombre":["Accesorios","Llaveros","Figuras"]
     },
-    "precio":1200,
+    "precio":500,
     "cantidad":0
 },
 {
     "id":"mateFutbol",
     "img":"../img/tienda/mateFutbol.png",
     "titulo":"Mate Futbolero",
-    "descripcion":"",
+    "descripcion":"Ideal para los amantes de la infusión y el deporte más popular del mundo.",
     "categoria":{
         "nombre":["Mates","Funcionales"]
     },
-    "precio":1200,
+    "precio":1600,
     "cantidad":0
 },
 {
     "id":"mateStitchCabeza",
     "img":"../img/tienda/mateStitchCabeza.png",
     "titulo":"Mate Cabeza de Stitch",
-    "descripcion":"",
+    "descripcion":"Disfruta de tu mate en compañía de Stitch con este mate con forma de la cabeza de este adorable personaje",
     "categoria":{
         "nombre":["Funcionales","Mates"]
     },
-    "precio":1200,
+    "precio":2000,
     "cantidad":0
 },
 {
     "id":"mateStitchCuerpo",
     "img":"../img/tienda/mateStitchCuerpo.png",
     "titulo":"Mate Stitch Completo",
-    "descripcion":"",
+    "descripcion":"Saborea tu mate con estilo con este mate en forma de stitch",
     "categoria":{
         "nombre":["Funcionales","Mates"]
     },
-    "precio":1200,
+    "precio":2000,
     "cantidad":0
 },
 {
     "id":"figuraNezuko",
     "img":"../img/tienda/nezukoFigura.png",
     "titulo":"Kamado Nezuko",
-    "descripcion":"",
+    "descripcion":"Agrega a Nezuko Kamado, del popular anime Demon Slayer, a tu colección con esta figura detallada",
     "categoria":{
         "nombre":["Figuras","Coleccionables"]
     },
-    "precio":1200,
+    "precio":1800,
     "cantidad":0
 },
 {
     "id":"portaPinceles",
     "img":"../img/tienda/portaPinceles.png",
     "titulo":"Porta Pinceles",
-    "descripcion":"",
+    "descripcion":"Mantén tus pinceles organizados con este práctico porta pinceles. Ideal para artistas y aficionados creativos.",
     "categoria":{
         "nombre":["Funcionales"]
     },
-    "precio":1200,
+    "precio":700,
     "cantidad":0
 },
 {
     "id":"pokemonPrinplup",
     "img":"../img/tienda/prinplupPokemon.png",
-    "titulo":"",
-    "descripcion":"",
+    "titulo":"Pokemon: Prinplup",
+    "descripcion":"Añade a tu equipo Pokémon a Prinplup con esta figura coleccionable. ",
     "categoria":{
         "nombre":["Pokemon","Coleccionables","Figuras","Animales"]
     },
-    "precio":1200,
+    "precio":800,
     "cantidad":0
 },
 {
     "id":"longinusAyanamiRei",
     "img":"../img/tienda/ReiAyanami.png",
     "titulo":"Rei Ayanami Evangelion",
-    "descripcion":"",
+    "descripcion":"Captura la belleza y la melancolía de Rei Ayanami de Neon Genesis Evangelion con esta figura detallada.",
     "categoria":{
         "nombre":["Coleccionables","Figuras"]
     },
-    "precio":1200,
+    "precio":2000,
     "cantidad":0
 },
 {
     "id":"sydneyOpera",
     "img":"../img/tienda/sydneyOpera.png",
     "titulo":"Opera de Sydney ",
-    "descripcion":"",
+    "descripcion":"Celebra la majestuosidad arquitectónica con esta elegante reproducción de la Ópera de Sídney",
     "categoria":{
         "nombre":["Decoracion","DelMundo"]
     },
-    "precio":1200,
+    "precio":700,
     "cantidad":0
 },
 {
     "id":"SonicTails",
     "img":"../img/tienda/tails.png",
     "titulo":"Tails - Sonic",
-    "descripcion":"",
+    "descripcion":"Acompaña a Sonic en sus aventuras con esta adorable figura de Tails.",
     "categoria":{
         "nombre":["Coleccionables","Figuras"]
     },
-    "precio":1200,
+    "precio":900,
     "cantidad":0
 },
 {
     "id":"torresPetronas",
     "img":"../img/tienda/torresPetronas.png",
     "titulo":"Torres Petronas",
-    "descripcion":"",
+    "descripcion":"Revive la grandeza de las Torres Petronas con esta asombrosa reproducción",
     "categoria":{
         "nombre":["DelMundo","Decoracion"]
     },
@@ -629,18 +629,18 @@
     "id":"unicornio",
     "img":"../img/tienda/unicornio.png",
     "titulo":"Unicornio",
-    "descripcion":"",
+    "descripcion":"Sumérgete en el mundo de la fantasía con esta figura de unicornio, ademas podemos hacerle dedicatorias!",
     "categoria":{
         "nombre":["Coleccionables","Animales"]
     },
-    "precio":1200,
+    "precio":600,
     "cantidad":0
 },
 {
     "id":"vegettaBlue",
     "img":"../img/tienda/vegetaBlue.png",
     "titulo":"Vegetta Blue",
-    "descripcion":"",
+    "descripcion":"Lleva la fuerza y el carisma de Vegetta en su forma Super Saiyajin Blue a tu colección con esta figura",
     "categoria":{
         "nombre":["Figuras","Coleccionables"]
     },
@@ -651,11 +651,11 @@
     "id":"portavelaChino",
     "img":"../img/tienda/velaChina.png",
     "titulo":"Portavelas Chino",
-    "descripcion":"",
+    "descripcion":" Ilumina tu espacio con un toque oriental con este portavela de estilo chino",
     "categoria":{
         "nombre":["Portavelas","Decoracion","Funcionales"]
     },
-    "precio":1200,
+    "precio":900,
     "cantidad":0
 }
 ]
